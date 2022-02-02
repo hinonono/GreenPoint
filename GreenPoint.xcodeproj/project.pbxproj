@@ -23,6 +23,8 @@
 		26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10BA27AA758F00ECA491 /* HomeViewController.swift */; };
 		26CA10BD27AA75AF00ECA491 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10BC27AA75AF00ECA491 /* MemberViewController.swift */; };
 		26CA10BF27AA75CF00ECA491 /* CarrierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */; };
+		26CA10C127AA8D7F00ECA491 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10C027AA8D7F00ECA491 /* Post.swift */; };
+		26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10C227AA8F2C00ECA491 /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		26CA10BA27AA758F00ECA491 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		26CA10BC27AA75AF00ECA491 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
 		26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierViewController.swift; sourceTree = "<group>"; };
+		26CA10C027AA8D7F00ECA491 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		26CA10C227AA8F2C00ECA491 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				26CA10B227AA732500ECA491 /* Redeem.storyboard */,
 				26CA10B427AA736300ECA491 /* Coupon.storyboard */,
 				26CA10B627AA740200ECA491 /* Member.storyboard */,
+				26CA10C227AA8F2C00ECA491 /* PostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,11 +110,11 @@
 		26CA10AC27AA67BD00ECA491 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				26CA10BA27AA758F00ECA491 /* HomeViewController.swift */,
+				26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */,
 				26CA109727AA678C00ECA491 /* RedeemViewController.swift */,
 				26CA10B827AA753900ECA491 /* CouponViewController.swift */,
-				26CA10BA27AA758F00ECA491 /* HomeViewController.swift */,
 				26CA10BC27AA75AF00ECA491 /* MemberViewController.swift */,
-				26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 		26CA10AD27AA6D8900ECA491 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				26CA10C027AA8D7F00ECA491 /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -203,7 +209,9 @@
 				26CA10B927AA753900ECA491 /* CouponViewController.swift in Sources */,
 				26CA109E27AA678C00ECA491 /* GreenPoint.xcdatamodeld in Sources */,
 				26CA10BF27AA75CF00ECA491 /* CarrierViewController.swift in Sources */,
+				26CA10C127AA8D7F00ECA491 /* Post.swift in Sources */,
 				26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */,
+				26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */,
 				26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
