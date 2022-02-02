@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2689023427AAC40B007AC9DA /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689023327AAC40B007AC9DA /* HomeFeedView.swift */; };
 		26CA109427AA678C00ECA491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109327AA678C00ECA491 /* AppDelegate.swift */; };
 		26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109527AA678C00ECA491 /* SceneDelegate.swift */; };
 		26CA109827AA678C00ECA491 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109727AA678C00ECA491 /* RedeemViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2689023327AAC40B007AC9DA /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
 		26CA109027AA678C00ECA491 /* GreenPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA109327AA678C00ECA491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26CA109527AA678C00ECA491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				26CA10B427AA736300ECA491 /* Coupon.storyboard */,
 				26CA10B627AA740200ECA491 /* Member.storyboard */,
 				26CA10C227AA8F2C00ECA491 /* PostView.swift */,
+				2689023327AAC40B007AC9DA /* HomeFeedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2689023427AAC40B007AC9DA /* HomeFeedView.swift in Sources */,
 				26CA109827AA678C00ECA491 /* RedeemViewController.swift in Sources */,
 				26CA10BD27AA75AF00ECA491 /* MemberViewController.swift in Sources */,
 				26CA109427AA678C00ECA491 /* AppDelegate.swift in Sources */,
@@ -364,13 +368,14 @@
 				DEVELOPMENT_TEAM = P7SCDBTVHA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GreenPoint/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "環保集點";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -394,13 +399,14 @@
 				DEVELOPMENT_TEAM = P7SCDBTVHA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GreenPoint/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "環保集點";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
