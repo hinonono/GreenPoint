@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oBr-iq-dWl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的優惠券-->
+        <scene sceneID="2F4-3m-Jbi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzx-dD-5iU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="dw7-Kv-XIR" customClass="CouponViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N0x-Lq-EGk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="D9K-nL-8v7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的優惠券" id="BA0-p3-NSz"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2484.057971014493" y="1145.0892857142856"/>
+        </scene>
+        <!--我的優惠券-->
+        <scene sceneID="ZTt-ZF-ERh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Fw-Uk-90s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oBr-iq-dWl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的優惠券" image="tab_coupon" id="ha9-mI-8y4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="of0-2K-ZjF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dw7-Kv-XIR" kind="relationship" relationship="rootViewController" id="qhY-nD-fhB"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1573.913043478261" y="1145.0892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_coupon" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
