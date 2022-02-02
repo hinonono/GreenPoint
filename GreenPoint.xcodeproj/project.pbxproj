@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		26CA109427AA678C00ECA491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109327AA678C00ECA491 /* AppDelegate.swift */; };
 		26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109527AA678C00ECA491 /* SceneDelegate.swift */; };
-		26CA109827AA678C00ECA491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109727AA678C00ECA491 /* ViewController.swift */; };
+		26CA109827AA678C00ECA491 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109727AA678C00ECA491 /* RedeemViewController.swift */; };
 		26CA109B27AA678C00ECA491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CA109927AA678C00ECA491 /* Main.storyboard */; };
 		26CA109E27AA678C00ECA491 /* GreenPoint.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109C27AA678C00ECA491 /* GreenPoint.xcdatamodeld */; };
 		26CA10A027AA678D00ECA491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26CA109F27AA678D00ECA491 /* Assets.xcassets */; };
 		26CA10A327AA678D00ECA491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CA10A127AA678D00ECA491 /* LaunchScreen.storyboard */; };
+		26CA10AF27AA726F00ECA491 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CA10AE27AA726F00ECA491 /* Home.storyboard */; };
+		26CA10B127AA72D900ECA491 /* Carrier.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CA10B027AA72D900ECA491 /* Carrier.storyboard */; };
+		26CA10B327AA732500ECA491 /* Redeem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CA10B227AA732500ECA491 /* Redeem.storyboard */; };
+		26CA10B527AA736300ECA491 /* Coupon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CA10B427AA736300ECA491 /* Coupon.storyboard */; };
+		26CA10B727AA740200ECA491 /* Member.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26CA10B627AA740200ECA491 /* Member.storyboard */; };
+		26CA10B927AA753900ECA491 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10B827AA753900ECA491 /* CouponViewController.swift */; };
+		26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10BA27AA758F00ECA491 /* HomeViewController.swift */; };
+		26CA10BD27AA75AF00ECA491 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10BC27AA75AF00ECA491 /* MemberViewController.swift */; };
+		26CA10BF27AA75CF00ECA491 /* CarrierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26CA109027AA678C00ECA491 /* GreenPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA109327AA678C00ECA491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26CA109527AA678C00ECA491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26CA109727AA678C00ECA491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26CA109727AA678C00ECA491 /* RedeemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemViewController.swift; sourceTree = "<group>"; };
 		26CA109A27AA678C00ECA491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26CA109D27AA678C00ECA491 /* GreenPoint.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GreenPoint.xcdatamodel; sourceTree = "<group>"; };
 		26CA109F27AA678D00ECA491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26CA10A227AA678D00ECA491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26CA10A427AA678D00ECA491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26CA10AE27AA726F00ECA491 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		26CA10B027AA72D900ECA491 /* Carrier.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Carrier.storyboard; sourceTree = "<group>"; };
+		26CA10B227AA732500ECA491 /* Redeem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Redeem.storyboard; sourceTree = "<group>"; };
+		26CA10B427AA736300ECA491 /* Coupon.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Coupon.storyboard; sourceTree = "<group>"; };
+		26CA10B627AA740200ECA491 /* Member.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Member.storyboard; sourceTree = "<group>"; };
+		26CA10B827AA753900ECA491 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		26CA10BA27AA758F00ECA491 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		26CA10BC27AA75AF00ECA491 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
+		26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +93,11 @@
 			children = (
 				26CA10A127AA678D00ECA491 /* LaunchScreen.storyboard */,
 				26CA109927AA678C00ECA491 /* Main.storyboard */,
+				26CA10AE27AA726F00ECA491 /* Home.storyboard */,
+				26CA10B027AA72D900ECA491 /* Carrier.storyboard */,
+				26CA10B227AA732500ECA491 /* Redeem.storyboard */,
+				26CA10B427AA736300ECA491 /* Coupon.storyboard */,
+				26CA10B627AA740200ECA491 /* Member.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -82,7 +105,11 @@
 		26CA10AC27AA67BD00ECA491 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				26CA109727AA678C00ECA491 /* ViewController.swift */,
+				26CA109727AA678C00ECA491 /* RedeemViewController.swift */,
+				26CA10B827AA753900ECA491 /* CouponViewController.swift */,
+				26CA10BA27AA758F00ECA491 /* HomeViewController.swift */,
+				26CA10BC27AA75AF00ECA491 /* MemberViewController.swift */,
+				26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -152,9 +179,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CA10B727AA740200ECA491 /* Member.storyboard in Resources */,
 				26CA10A327AA678D00ECA491 /* LaunchScreen.storyboard in Resources */,
 				26CA10A027AA678D00ECA491 /* Assets.xcassets in Resources */,
+				26CA10B527AA736300ECA491 /* Coupon.storyboard in Resources */,
+				26CA10B127AA72D900ECA491 /* Carrier.storyboard in Resources */,
 				26CA109B27AA678C00ECA491 /* Main.storyboard in Resources */,
+				26CA10B327AA732500ECA491 /* Redeem.storyboard in Resources */,
+				26CA10AF27AA726F00ECA491 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,10 +197,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26CA109827AA678C00ECA491 /* ViewController.swift in Sources */,
+				26CA109827AA678C00ECA491 /* RedeemViewController.swift in Sources */,
+				26CA10BD27AA75AF00ECA491 /* MemberViewController.swift in Sources */,
 				26CA109427AA678C00ECA491 /* AppDelegate.swift in Sources */,
+				26CA10B927AA753900ECA491 /* CouponViewController.swift in Sources */,
 				26CA109E27AA678C00ECA491 /* GreenPoint.xcdatamodeld in Sources */,
+				26CA10BF27AA75CF00ECA491 /* CarrierViewController.swift in Sources */,
 				26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */,
+				26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

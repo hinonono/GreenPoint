@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CarrierViewController.swift
 //  GreenPoint
 //
 //  Created by 謝承邑 on 2022/2/2.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CarrierViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-
