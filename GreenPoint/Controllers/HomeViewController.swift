@@ -11,7 +11,7 @@ import SwiftUI
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var carousel: UIView!
-    @IBOutlet var featuredCollectionView: UICollectionView!
+    @IBOutlet weak var featuredCollectionView: UICollectionView!
     
     
     override func viewDidLoad() {
@@ -24,28 +24,25 @@ class HomeViewController: UIViewController {
         childView.view.frame = carousel.bounds
         carousel.addSubview(childView.view)
         
-        //Delegate設定
         featuredCollectionView.delegate = self
         featuredCollectionView.dataSource = self
     }
 
 }
 
-//MARK: - 最新消息
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return featureds.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeaturedCell", for: indexPath) as! FeaturedCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "featuredCell", for: indexPath) as! FeaturedCollectionViewCell
+        let featured = featureds[indexPath.item]
         
-        cell.banner.image = UIImage(named: "grid1")
-        cell.titleLabel.text = "週三好康，限量發行"
+        cell.banner.image = featured.image
+        cell.titleLabel.text = featured.title
         
         return cell
     }
-    
-    
 }
 
