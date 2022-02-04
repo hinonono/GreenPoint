@@ -27,7 +27,21 @@ class HomeViewController: UIViewController {
         featuredCollectionView.delegate = self
         featuredCollectionView.dataSource = self
     }
-
+    @IBAction func cellPressed(_ sender: UIButton) {
+        guard let vc2 = storyboard?.instantiateViewController(withIdentifier: "FeaturedList") else { return }
+        guard let vc3 = storyboard?.instantiateViewController(withIdentifier: "FeaturedListDetail") as? FeaturedListDetailViewController else { return }
+        
+        self.navigationController?.setViewControllers([self, vc2, vc3], animated: true)
+        
+        //計算使用者點擊了哪一個cell
+        let buttonPostion = sender.convert(sender.bounds.origin, to: featuredCollectionView)
+        if let indexPath = featuredCollectionView.indexPathForItem(at: buttonPostion) {
+            
+            //將點擊結果對應的indexpath作為數值傳入vc3的featured，用以查詢對應的文章標題、圖片
+            vc3.featured = featureds[indexPath[1]]
+        }
+    }
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -36,7 +50,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "featuredCell", for: indexPath) as! FeaturedCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.cellIdentifier.featuredCell, for: indexPath) as! FeaturedCollectionViewCell
         let featured = featureds[indexPath.item]
         
         cell.banner.image = featured.image

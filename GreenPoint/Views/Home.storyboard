@@ -38,7 +38,7 @@
                                         <rect key="frame" x="0.0" y="230" width="413" height="310"/>
                                         <subviews>
                                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AYd-nv-Ynr">
-                                                <rect key="frame" x="0.0" y="67.5" width="413" height="221"/>
+                                                <rect key="frame" x="0.0" y="55.5" width="413" height="233"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="azh-Sf-vNu">
                                                     <size key="itemSize" width="150" height="180"/>
@@ -48,7 +48,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="featuredCell" id="NJ0-mg-I9L" customClass="FeaturedCollectionViewCell" customModule="GreenPoint" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="20.5" width="150" height="180"/>
+                                                        <rect key="frame" x="16" y="26.5" width="150" height="180"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yT6-QH-7lQ">
                                                             <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
@@ -72,7 +72,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="trailing" secondItem="Ppp-xb-7J9" secondAttribute="trailing" constant="8" id="2TB-Xv-zSR"/>
                                                                         <constraint firstItem="Ppp-xb-7J9" firstAttribute="leading" secondItem="Bin-Sv-ke8" secondAttribute="leading" constant="8" id="8dr-IL-HfG"/>
@@ -82,12 +82,24 @@
                                                                         <constraint firstItem="HAe-Af-Kg9" firstAttribute="leading" secondItem="Bin-Sv-ke8" secondAttribute="leading" id="wmg-tj-t9r"/>
                                                                     </constraints>
                                                                 </view>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZt-sU-M4r" userLabel="cellPressed">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain"/>
+                                                                    <connections>
+                                                                        <action selector="cellPressed:" destination="dcq-0E-MpG" eventType="touchUpInside" id="MDX-Pj-Brf"/>
+                                                                    </connections>
+                                                                </button>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="Bin-Sv-ke8" firstAttribute="leading" secondItem="yT6-QH-7lQ" secondAttribute="leading" id="81s-1X-FPm"/>
+                                                                <constraint firstAttribute="bottom" secondItem="qZt-sU-M4r" secondAttribute="bottom" id="Nc2-ff-a0N"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Bin-Sv-ke8" secondAttribute="trailing" id="TLg-rl-C9w"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Bin-Sv-ke8" secondAttribute="bottom" id="aFy-yy-0YX"/>
+                                                                <constraint firstItem="qZt-sU-M4r" firstAttribute="leading" secondItem="yT6-QH-7lQ" secondAttribute="leading" id="aet-9n-7j9"/>
+                                                                <constraint firstItem="qZt-sU-M4r" firstAttribute="top" secondItem="yT6-QH-7lQ" secondAttribute="top" id="b5Y-lV-btd"/>
                                                                 <constraint firstItem="Bin-Sv-ke8" firstAttribute="top" secondItem="yT6-QH-7lQ" secondAttribute="top" id="gcP-tg-vNo"/>
+                                                                <constraint firstAttribute="trailing" secondItem="qZt-sU-M4r" secondAttribute="trailing" id="ri3-I5-pLD"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="150" height="180"/>
@@ -127,6 +139,9 @@
                                                         <buttonConfiguration key="configuration" style="gray" title="看全部">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="EVl-gt-pNl" kind="show" identifier="goToFeaturedList" id="fmT-YY-whD"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -139,7 +154,7 @@
                                             <constraint firstItem="wZh-bH-3a6" firstAttribute="top" secondItem="l1c-Yh-w1E" secondAttribute="top" constant="16" id="6bD-Qp-hmx"/>
                                             <constraint firstAttribute="height" constant="310" id="7nC-fO-EbG"/>
                                             <constraint firstAttribute="trailing" secondItem="AYd-nv-Ynr" secondAttribute="trailing" id="GdW-Hr-uKw"/>
-                                            <constraint firstItem="AYd-nv-Ynr" firstAttribute="top" secondItem="wZh-bH-3a6" secondAttribute="bottom" constant="12" id="QeH-aI-eBw"/>
+                                            <constraint firstItem="AYd-nv-Ynr" firstAttribute="top" secondItem="wZh-bH-3a6" secondAttribute="bottom" id="QeH-aI-eBw"/>
                                             <constraint firstItem="AYd-nv-Ynr" firstAttribute="leading" secondItem="l1c-Yh-w1E" secondAttribute="leading" id="nJg-Zk-TUs"/>
                                         </constraints>
                                     </view>
@@ -181,6 +196,167 @@
             </objects>
             <point key="canvasLocation" x="2512.3188405797105" y="-173.4375"/>
         </scene>
+        <!--最新消息-->
+        <scene sceneID="R0M-e3-htw">
+            <objects>
+                <viewController storyboardIdentifier="FeaturedList" hidesBottomBarWhenPushed="YES" id="EVl-gt-pNl" customClass="FeaturedListViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBG-na-n0Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="S7e-Wv-09B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="最新消息" id="gHG-Bp-OdH"/>
+                    <connections>
+                        <segue destination="BSR-dc-355" kind="show" identifier="goToFeatureDetail" id="a7c-KI-iJ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1d-zp-Qgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3419" y="-173"/>
+        </scene>
+        <!--Featured List Detail View Controller-->
+        <scene sceneID="ONS-RA-Vll">
+            <objects>
+                <viewController storyboardIdentifier="FeaturedListDetail" hidesBottomBarWhenPushed="YES" id="BSR-dc-355" customClass="FeaturedListDetailViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o7p-da-STc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZxA-Cr-EgL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agn-Ma-mKQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid3" translatesAutoresizingMaskIntoConstraints="NO" id="Wj8-Lx-qoF">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="L50-Xn-Lfg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o05-Ns-VlW" customClass="BlackToTransparentGradient" customModule="GreenPoint" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="Ix8-X7-B6c"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lZA-K4-Y6p">
+                                                <rect key="frame" x="28" y="378" width="358" height="102.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="環保集點xECOCO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St3-tB-PCt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="環保集點夏日感謝祭，綠色消費享多重回饋！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elx-2p-bLs">
+                                                        <rect key="frame" x="0.0" y="22.5" width="340.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.08.01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-Qz-Exp">
+                                                        <rect key="frame" x="0.0" y="88" width="61.5" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjk-EK-Pfh">
+                                                <rect key="frame" x="28" y="512.5" width="358" height="83.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="綠色消費點數加碼贈，再抽加碼好禮">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="，「任天堂">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Switch">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="」、「百萬買對東西也可以改變世界，加入環保集點的行列，讓地球環境更美好！">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="lZA-K4-Y6p" firstAttribute="leading" secondItem="agn-Ma-mKQ" secondAttribute="leading" constant="28" id="1li-r9-w4H"/>
+                                            <constraint firstAttribute="trailing" secondItem="o05-Ns-VlW" secondAttribute="trailing" id="LMl-9V-umo"/>
+                                            <constraint firstItem="o05-Ns-VlW" firstAttribute="top" secondItem="agn-Ma-mKQ" secondAttribute="top" id="N6v-jJ-c5Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pjk-EK-Pfh" secondAttribute="trailing" constant="28" id="Shg-Yy-OzP"/>
+                                            <constraint firstAttribute="trailing" secondItem="lZA-K4-Y6p" secondAttribute="trailing" constant="28" id="XvV-w1-wFS"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wj8-Lx-qoF" secondAttribute="trailing" id="YwE-68-lh9"/>
+                                            <constraint firstItem="Wj8-Lx-qoF" firstAttribute="top" secondItem="agn-Ma-mKQ" secondAttribute="top" id="ZBm-ky-ypk"/>
+                                            <constraint firstItem="lZA-K4-Y6p" firstAttribute="top" secondItem="Wj8-Lx-qoF" secondAttribute="bottom" constant="28" id="aV4-6l-c9P"/>
+                                            <constraint firstItem="Wj8-Lx-qoF" firstAttribute="leading" secondItem="agn-Ma-mKQ" secondAttribute="leading" id="c6f-VC-wPK"/>
+                                            <constraint firstItem="Pjk-EK-Pfh" firstAttribute="leading" secondItem="agn-Ma-mKQ" secondAttribute="leading" constant="28" id="e70-pd-vd4"/>
+                                            <constraint firstItem="Pjk-EK-Pfh" firstAttribute="top" secondItem="lZA-K4-Y6p" secondAttribute="bottom" constant="32" id="mNc-0S-gqR"/>
+                                            <constraint firstItem="o05-Ns-VlW" firstAttribute="leading" secondItem="agn-Ma-mKQ" secondAttribute="leading" id="wqQ-SE-UYa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="agn-Ma-mKQ" firstAttribute="leading" secondItem="ZxA-Cr-EgL" secondAttribute="leading" id="Aa4-je-MvR"/>
+                                    <constraint firstItem="agn-Ma-mKQ" firstAttribute="centerX" secondItem="ZxA-Cr-EgL" secondAttribute="centerX" id="DnW-3r-unQ"/>
+                                    <constraint firstItem="agn-Ma-mKQ" firstAttribute="top" secondItem="ZxA-Cr-EgL" secondAttribute="top" id="bmu-Tn-V5a"/>
+                                    <constraint firstAttribute="bottom" secondItem="agn-Ma-mKQ" secondAttribute="bottom" priority="250" id="bo4-k5-URh"/>
+                                    <constraint firstAttribute="trailing" secondItem="agn-Ma-mKQ" secondAttribute="trailing" id="dNg-HP-OqC"/>
+                                    <constraint firstItem="agn-Ma-mKQ" firstAttribute="centerY" secondItem="ZxA-Cr-EgL" secondAttribute="centerY" priority="250" id="hc7-fL-EAE"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RSs-sn-Joj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZxA-Cr-EgL" firstAttribute="top" secondItem="o7p-da-STc" secondAttribute="top" id="2OB-64-Lgc"/>
+                            <constraint firstAttribute="bottom" secondItem="ZxA-Cr-EgL" secondAttribute="bottom" id="6Z3-ar-19z"/>
+                            <constraint firstItem="ZxA-Cr-EgL" firstAttribute="leading" secondItem="o7p-da-STc" secondAttribute="leading" id="9We-bs-ydl"/>
+                            <constraint firstAttribute="trailing" secondItem="ZxA-Cr-EgL" secondAttribute="trailing" id="xUo-9m-KRw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nW0-qM-1zu"/>
+                    <connections>
+                        <outlet property="articleImage" destination="Wj8-Lx-qoF" id="ddV-yY-2A0"/>
+                        <outlet property="articleSubtitle" destination="St3-tB-PCt" id="mdu-JG-Q2h"/>
+                        <outlet property="articleTitle" destination="Elx-2p-bLs" id="bBd-aJ-NiF"/>
+                        <outlet property="artitleDate" destination="8JF-Qz-Exp" id="w6c-GN-e8M"/>
+                        <outlet property="contentLabel" destination="Pjk-EK-Pfh" id="9bs-ef-fDF"/>
+                        <outlet property="featuredListDetailScrollView" destination="ZxA-Cr-EgL" id="NCO-yQ-8ui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5d-HZ-kMI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4333.3333333333339" y="-175.44642857142856"/>
+        </scene>
         <!--首頁-->
         <scene sceneID="PAh-f1-ob3">
             <objects>
@@ -207,12 +383,16 @@
     </scenes>
     <resources>
         <image name="Icon_bell" width="24" height="24"/>
+        <image name="grid3" width="150" height="120"/>
         <image name="tab_news" width="24" height="24"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.56300002336502075" blue="0.3190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

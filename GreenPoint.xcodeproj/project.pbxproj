@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261CC87427ACD69700B470FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87327ACD69700B470FB /* Constants.swift */; };
+		261CC87727ACE37100B470FB /* FeaturedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87627ACE37100B470FB /* FeaturedListViewController.swift */; };
+		261CC87927ACE38900B470FB /* FeaturedListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87827ACE38900B470FB /* FeaturedListDetailViewController.swift */; };
+		261CC87B27ACFE6600B470FB /* BlackToTransparentGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87A27ACFE6600B470FB /* BlackToTransparentGradient.swift */; };
 		264BDF6227ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */; };
 		264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6327ABCF55008F8F88 /* Featured.swift */; };
 		2689023427AAC40B007AC9DA /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689023327AAC40B007AC9DA /* HomeFeedView.swift */; };
@@ -31,6 +35,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261CC87327ACD69700B470FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		261CC87627ACE37100B470FB /* FeaturedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedListViewController.swift; sourceTree = "<group>"; };
+		261CC87827ACE38900B470FB /* FeaturedListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedListDetailViewController.swift; sourceTree = "<group>"; };
+		261CC87A27ACFE6600B470FB /* BlackToTransparentGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackToTransparentGradient.swift; sourceTree = "<group>"; };
 		264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		264BDF6327ABCF55008F8F88 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		2689023327AAC40B007AC9DA /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
@@ -67,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		261CC87527ACE35200B470FB /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				261CC87627ACE37100B470FB /* FeaturedListViewController.swift */,
+				261CC87827ACE38900B470FB /* FeaturedListDetailViewController.swift */,
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
 		26CA108727AA678C00ECA491 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +128,7 @@
 				26CA10C227AA8F2C00ECA491 /* PostView.swift */,
 				2689023327AAC40B007AC9DA /* HomeFeedView.swift */,
 				264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */,
+				261CC87A27ACFE6600B470FB /* BlackToTransparentGradient.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +136,7 @@
 		26CA10AC27AA67BD00ECA491 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				261CC87527ACE35200B470FB /* Featured */,
 				26CA10BA27AA758F00ECA491 /* HomeViewController.swift */,
 				26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */,
 				26CA109727AA678C00ECA491 /* RedeemViewController.swift */,
@@ -132,6 +151,7 @@
 			children = (
 				26CA10C027AA8D7F00ECA491 /* Post.swift */,
 				264BDF6327ABCF55008F8F88 /* Featured.swift */,
+				261CC87327ACD69700B470FB /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,12 +239,16 @@
 				26CA10B927AA753900ECA491 /* CouponViewController.swift in Sources */,
 				26CA109E27AA678C00ECA491 /* GreenPoint.xcdatamodeld in Sources */,
 				26CA10BF27AA75CF00ECA491 /* CarrierViewController.swift in Sources */,
+				261CC87727ACE37100B470FB /* FeaturedListViewController.swift in Sources */,
 				26CA10C127AA8D7F00ECA491 /* Post.swift in Sources */,
 				264BDF6227ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift in Sources */,
 				26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */,
 				264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */,
+				261CC87B27ACFE6600B470FB /* BlackToTransparentGradient.swift in Sources */,
+				261CC87427ACD69700B470FB /* Constants.swift in Sources */,
 				26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */,
 				26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */,
+				261CC87927ACE38900B470FB /* FeaturedListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
