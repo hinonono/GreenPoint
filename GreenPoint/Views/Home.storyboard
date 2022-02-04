@@ -223,47 +223,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSc-8j-vUP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZL-Jt-Zh9">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid3" translatesAutoresizingMaskIntoConstraints="NO" id="ZX7-l2-hhm">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="375" id="vg0-7I-aPh"/>
-                                        </constraints>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSm-qE-00a" customClass="BlackToTransparentGradient" customModule="GreenPoint" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ek6-9R-TKE" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="138" id="07U-zq-oq1"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="fSm-qE-00a" firstAttribute="leading" secondItem="ZX7-l2-hhm" secondAttribute="leading" id="BmX-Uo-SBW"/>
-                                    <constraint firstItem="ZX7-l2-hhm" firstAttribute="top" secondItem="Koo-vS-49E" secondAttribute="top" id="QWA-Kw-gp3"/>
-                                    <constraint firstItem="ZX7-l2-hhm" firstAttribute="leading" secondItem="3SM-q8-agE" secondAttribute="leading" id="Rta-Jq-Yrg"/>
-                                    <constraint firstItem="fSm-qE-00a" firstAttribute="trailing" secondItem="ZX7-l2-hhm" secondAttribute="trailing" id="Z27-PP-dTJ"/>
-                                    <constraint firstItem="fSm-qE-00a" firstAttribute="top" secondItem="ZX7-l2-hhm" secondAttribute="top" id="c2x-VW-yx7"/>
-                                    <constraint firstItem="3SM-q8-agE" firstAttribute="trailing" secondItem="ZX7-l2-hhm" secondAttribute="trailing" id="yXj-3D-QQF"/>
+                                    <constraint firstItem="ek6-9R-TKE" firstAttribute="top" secondItem="TZL-Jt-Zh9" secondAttribute="top" id="B6z-ri-5Mt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ek6-9R-TKE" secondAttribute="trailing" id="POK-2S-9TX"/>
+                                    <constraint firstAttribute="bottom" secondItem="ek6-9R-TKE" secondAttribute="bottom" id="QRr-LQ-dCf"/>
+                                    <constraint firstItem="ek6-9R-TKE" firstAttribute="centerX" secondItem="TZL-Jt-Zh9" secondAttribute="centerX" id="Xqx-uV-Hsc"/>
+                                    <constraint firstItem="ek6-9R-TKE" firstAttribute="centerY" secondItem="TZL-Jt-Zh9" secondAttribute="centerY" id="YtJ-Yu-mYR"/>
+                                    <constraint firstItem="ek6-9R-TKE" firstAttribute="leading" secondItem="TZL-Jt-Zh9" secondAttribute="leading" id="e7U-l4-iZf"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="Koo-vS-49E"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="3SM-q8-agE"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="FDf-rZ-r0J"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Vuy-Pj-1S5"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RSs-sn-Joj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="tSc-8j-vUP" secondAttribute="bottom" id="W1U-Oa-9uT"/>
-                            <constraint firstItem="RSs-sn-Joj" firstAttribute="trailing" secondItem="tSc-8j-vUP" secondAttribute="trailing" id="dzN-aX-WI2"/>
-                            <constraint firstItem="tSc-8j-vUP" firstAttribute="leading" secondItem="RSs-sn-Joj" secondAttribute="leading" id="poN-hN-pAt"/>
-                            <constraint firstItem="tSc-8j-vUP" firstAttribute="top" secondItem="o7p-da-STc" secondAttribute="top" id="tY3-Um-6p7"/>
+                            <constraint firstItem="TZL-Jt-Zh9" firstAttribute="top" secondItem="RSs-sn-Joj" secondAttribute="top" id="3nH-Pg-GfH"/>
+                            <constraint firstAttribute="bottom" secondItem="TZL-Jt-Zh9" secondAttribute="bottom" id="rMw-hv-PNj"/>
+                            <constraint firstItem="TZL-Jt-Zh9" firstAttribute="leading" secondItem="RSs-sn-Joj" secondAttribute="leading" id="u2J-cs-EG8"/>
+                            <constraint firstItem="TZL-Jt-Zh9" firstAttribute="trailing" secondItem="RSs-sn-Joj" secondAttribute="trailing" id="yaf-cp-VM3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nW0-qM-1zu"/>
                     <connections>
-                        <outlet property="featuredListDetailScrollView" destination="tSc-8j-vUP" id="HSX-AH-Qw7"/>
+                        <outlet property="featuredListDetailScrollView" destination="TZL-Jt-Zh9" id="L9J-FE-qde"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5d-HZ-kMI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -296,7 +287,6 @@
     </scenes>
     <resources>
         <image name="Icon_bell" width="24" height="24"/>
-        <image name="grid3" width="150" height="120"/>
         <image name="tab_news" width="24" height="24"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.56300002336502075" blue="0.3190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
