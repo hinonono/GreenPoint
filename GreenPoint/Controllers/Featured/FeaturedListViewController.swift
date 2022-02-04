@@ -8,11 +8,26 @@
 import UIKit
 
 class FeaturedListViewController: UIViewController {
-
+    @IBOutlet weak var featuredTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        featuredTableView.delegate = self
+        featuredTableView.dataSource = self
     }
 
+}
+
+extension FeaturedListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }
