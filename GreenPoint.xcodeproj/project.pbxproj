@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261CC87427ACD69700B470FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87327ACD69700B470FB /* Constants.swift */; };
 		264BDF6227ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */; };
 		264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6327ABCF55008F8F88 /* Featured.swift */; };
 		2689023427AAC40B007AC9DA /* HomeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689023327AAC40B007AC9DA /* HomeFeedView.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261CC87327ACD69700B470FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		264BDF6327ABCF55008F8F88 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
 		2689023327AAC40B007AC9DA /* HomeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedView.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				26CA10C027AA8D7F00ECA491 /* Post.swift */,
 				264BDF6327ABCF55008F8F88 /* Featured.swift */,
+				261CC87327ACD69700B470FB /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				264BDF6227ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift in Sources */,
 				26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */,
 				264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */,
+				261CC87427ACD69700B470FB /* Constants.swift in Sources */,
 				26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */,
 				26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */,
 			);

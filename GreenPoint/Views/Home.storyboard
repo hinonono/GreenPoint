@@ -72,7 +72,7 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
-                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="trailing" secondItem="Ppp-xb-7J9" secondAttribute="trailing" constant="8" id="2TB-Xv-zSR"/>
                                                                         <constraint firstItem="Ppp-xb-7J9" firstAttribute="leading" secondItem="Bin-Sv-ke8" secondAttribute="leading" constant="8" id="8dr-IL-HfG"/>
@@ -82,12 +82,24 @@
                                                                         <constraint firstItem="HAe-Af-Kg9" firstAttribute="leading" secondItem="Bin-Sv-ke8" secondAttribute="leading" id="wmg-tj-t9r"/>
                                                                     </constraints>
                                                                 </view>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZt-sU-M4r">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                                                                    <state key="normal" title="Button"/>
+                                                                    <buttonConfiguration key="configuration" style="plain"/>
+                                                                    <connections>
+                                                                        <action selector="cellPressed:" destination="dcq-0E-MpG" eventType="touchUpInside" id="MDX-Pj-Brf"/>
+                                                                    </connections>
+                                                                </button>
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="Bin-Sv-ke8" firstAttribute="leading" secondItem="yT6-QH-7lQ" secondAttribute="leading" id="81s-1X-FPm"/>
+                                                                <constraint firstAttribute="bottom" secondItem="qZt-sU-M4r" secondAttribute="bottom" id="Nc2-ff-a0N"/>
                                                                 <constraint firstAttribute="trailing" secondItem="Bin-Sv-ke8" secondAttribute="trailing" id="TLg-rl-C9w"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Bin-Sv-ke8" secondAttribute="bottom" id="aFy-yy-0YX"/>
+                                                                <constraint firstItem="qZt-sU-M4r" firstAttribute="leading" secondItem="yT6-QH-7lQ" secondAttribute="leading" id="aet-9n-7j9"/>
+                                                                <constraint firstItem="qZt-sU-M4r" firstAttribute="top" secondItem="yT6-QH-7lQ" secondAttribute="top" id="b5Y-lV-btd"/>
                                                                 <constraint firstItem="Bin-Sv-ke8" firstAttribute="top" secondItem="yT6-QH-7lQ" secondAttribute="top" id="gcP-tg-vNo"/>
+                                                                <constraint firstAttribute="trailing" secondItem="qZt-sU-M4r" secondAttribute="trailing" id="ri3-I5-pLD"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
                                                         <size key="customSize" width="150" height="180"/>
@@ -175,11 +187,47 @@
                     <connections>
                         <outlet property="carousel" destination="JCn-Lz-H8y" id="Zbk-4r-iY9"/>
                         <outlet property="featuredCollectionView" destination="AYd-nv-Ynr" id="EpV-F3-Gk8"/>
+                        <segue destination="EVl-gt-pNl" kind="show" id="cw0-dk-m4Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PG6-Pm-71Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2512.3188405797105" y="-173.4375"/>
+        </scene>
+        <!--最新消息-->
+        <scene sceneID="R0M-e3-htw">
+            <objects>
+                <viewController id="EVl-gt-pNl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xBG-na-n0Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="S7e-Wv-09B"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="最新消息" id="gHG-Bp-OdH"/>
+                    <connections>
+                        <segue destination="BSR-dc-355" kind="show" id="a7c-KI-iJ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1d-zp-Qgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3420" y="-174"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ONS-RA-Vll">
+            <objects>
+                <viewController id="BSR-dc-355" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o7p-da-STc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RSs-sn-Joj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nW0-qM-1zu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5d-HZ-kMI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4336" y="-174"/>
         </scene>
         <!--首頁-->
         <scene sceneID="PAh-f1-ob3">

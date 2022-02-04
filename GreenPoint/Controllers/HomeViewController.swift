@@ -27,7 +27,10 @@ class HomeViewController: UIViewController {
         featuredCollectionView.delegate = self
         featuredCollectionView.dataSource = self
     }
-
+    @IBAction func cellPressed(_ sender: UIButton) {
+        
+    }
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -36,7 +39,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "featuredCell", for: indexPath) as! FeaturedCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.cellIdentifier.featuredCell, for: indexPath) as! FeaturedCollectionViewCell
         let featured = featureds[indexPath.item]
         
         cell.banner.image = featured.image
