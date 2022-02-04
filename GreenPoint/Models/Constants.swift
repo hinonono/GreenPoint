@@ -10,8 +10,10 @@ import Foundation
 struct K {
     struct cellIdentifier {
         static let featuredCell = "featuredCell"
+        static let featureTableCell = "featureTableCell"
     }
     
     struct segueSpell {
+        static let goToFeatureDetail = "goToFeatureDetail"
     }
 }

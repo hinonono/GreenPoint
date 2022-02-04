@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
         featuredCollectionView.delegate = self
         featuredCollectionView.dataSource = self
     }
+    
     @IBAction func cellPressed(_ sender: UIButton) {
         guard let vc2 = storyboard?.instantiateViewController(withIdentifier: "FeaturedList") else { return }
         guard let vc3 = storyboard?.instantiateViewController(withIdentifier: "FeaturedListDetail") as? FeaturedListDetailViewController else { return }
