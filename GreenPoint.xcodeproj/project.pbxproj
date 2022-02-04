@@ -14,6 +14,10 @@
 		261CC87D27AD384C00B470FB /* FeaturedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87C27AD384C00B470FB /* FeaturedTableViewCell.swift */; };
 		264BDF6227ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */; };
 		264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6327ABCF55008F8F88 /* Featured.swift */; };
+		2696F71327AD6DE1009AAE20 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71227AD6DE1009AAE20 /* NotificationTableViewCell.swift */; };
+		2696F71627AD6F0E009AAE20 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71527AD6F0E009AAE20 /* NotificationTableViewController.swift */; };
+		2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */; };
+		2696F71A27AD701F009AAE20 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71927AD701F009AAE20 /* Notification.swift */; };
 		26CA109427AA678C00ECA491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109327AA678C00ECA491 /* AppDelegate.swift */; };
 		26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109527AA678C00ECA491 /* SceneDelegate.swift */; };
 		26CA109827AA678C00ECA491 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109727AA678C00ECA491 /* RedeemViewController.swift */; };
@@ -42,6 +46,10 @@
 		261CC87C27AD384C00B470FB /* FeaturedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewCell.swift; sourceTree = "<group>"; };
 		264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		264BDF6327ABCF55008F8F88 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
+		2696F71227AD6DE1009AAE20 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		2696F71527AD6F0E009AAE20 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
+		2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableDetailViewController.swift; sourceTree = "<group>"; };
+		2696F71927AD701F009AAE20 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		26CA109027AA678C00ECA491 /* GreenPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA109327AA678C00ECA491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26CA109527AA678C00ECA491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,40 @@
 			path = Featured;
 			sourceTree = "<group>";
 		};
+		2696F70F27AD6D77009AAE20 /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */,
+				261CC87C27AD384C00B470FB /* FeaturedTableViewCell.swift */,
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
+		2696F71027AD6D9E009AAE20 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				261CC87A27ACFE6600B470FB /* BlackToTransparentGradient.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2696F71127AD6DB5009AAE20 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				2696F71227AD6DE1009AAE20 /* NotificationTableViewCell.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		2696F71427AD6EE0009AAE20 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				2696F71527AD6F0E009AAE20 /* NotificationTableViewController.swift */,
+				2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		26CA108727AA678C00ECA491 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +160,9 @@
 		26CA10AA27AA67B100ECA491 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2696F71027AD6D9E009AAE20 /* Others */,
+				2696F70F27AD6D77009AAE20 /* Featured */,
+				2696F71127AD6DB5009AAE20 /* Notifications */,
 				26CA10A127AA678D00ECA491 /* LaunchScreen.storyboard */,
 				26CA109927AA678C00ECA491 /* Main.storyboard */,
 				26CA10AE27AA726F00ECA491 /* Home.storyboard */,
@@ -126,9 +171,6 @@
 				26CA10B427AA736300ECA491 /* Coupon.storyboard */,
 				26CA10B627AA740200ECA491 /* Member.storyboard */,
 				26CA10C227AA8F2C00ECA491 /* PostView.swift */,
-				264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */,
-				261CC87C27AD384C00B470FB /* FeaturedTableViewCell.swift */,
-				261CC87A27ACFE6600B470FB /* BlackToTransparentGradient.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				261CC87527ACE35200B470FB /* Featured */,
+				2696F71427AD6EE0009AAE20 /* Notifications */,
 				26CA10BA27AA758F00ECA491 /* HomeViewController.swift */,
 				26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */,
 				26CA109727AA678C00ECA491 /* RedeemViewController.swift */,
@@ -152,6 +195,7 @@
 				26CA10C027AA8D7F00ECA491 /* Post.swift */,
 				264BDF6327ABCF55008F8F88 /* Featured.swift */,
 				261CC87327ACD69700B470FB /* Constants.swift */,
+				2696F71927AD701F009AAE20 /* Notification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2696F71327AD6DE1009AAE20 /* NotificationTableViewCell.swift in Sources */,
 				26CA109827AA678C00ECA491 /* RedeemViewController.swift in Sources */,
 				261CC87D27AD384C00B470FB /* FeaturedTableViewCell.swift in Sources */,
 				26CA10BD27AA75AF00ECA491 /* MemberViewController.swift in Sources */,
@@ -243,9 +288,12 @@
 				26CA10C127AA8D7F00ECA491 /* Post.swift in Sources */,
 				264BDF6227ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift in Sources */,
 				26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */,
+				2696F71627AD6F0E009AAE20 /* NotificationTableViewController.swift in Sources */,
 				264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */,
 				261CC87B27ACFE6600B470FB /* BlackToTransparentGradient.swift in Sources */,
+				2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */,
 				261CC87427ACD69700B470FB /* Constants.swift in Sources */,
+				2696F71A27AD701F009AAE20 /* Notification.swift in Sources */,
 				26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */,
 				26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */,
 				261CC87927ACE38900B470FB /* FeaturedListDetailViewController.swift in Sources */,
