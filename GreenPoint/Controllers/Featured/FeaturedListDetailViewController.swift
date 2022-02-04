@@ -9,10 +9,20 @@ import UIKit
 
 class FeaturedListDetailViewController: UIViewController {
 
+    @IBOutlet weak var featuredListDetailScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        featuredListDetailScrollView.contentInsetAdjustmentBehavior = .never
+    }
+    
+    override func viewSafeAreaInsetsDidChange() {
+        super.viewSafeAreaInsetsDidChange()
+        
+        var insets = view.safeAreaInsets
+        insets.top = 0
+        featuredListDetailScrollView.contentInset = insets
     }
 
 }

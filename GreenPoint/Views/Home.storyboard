@@ -199,7 +199,7 @@
         <!--最新消息-->
         <scene sceneID="R0M-e3-htw">
             <objects>
-                <viewController storyboardIdentifier="FeaturedList" id="EVl-gt-pNl" customClass="FeaturedListViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeaturedList" hidesBottomBarWhenPushed="YES" id="EVl-gt-pNl" customClass="FeaturedListViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xBG-na-n0Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,18 +218,57 @@
         <!--Featured List Detail View Controller-->
         <scene sceneID="ONS-RA-Vll">
             <objects>
-                <viewController storyboardIdentifier="FeaturedListDetail" id="BSR-dc-355" customClass="FeaturedListDetailViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeaturedListDetail" hidesBottomBarWhenPushed="YES" id="BSR-dc-355" customClass="FeaturedListDetailViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7p-da-STc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSc-8j-vUP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid3" translatesAutoresizingMaskIntoConstraints="NO" id="ZX7-l2-hhm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="375" id="vg0-7I-aPh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fSm-qE-00a" customClass="BlackToTransparentGradient" customModule="GreenPoint" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="138" id="07U-zq-oq1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fSm-qE-00a" firstAttribute="leading" secondItem="ZX7-l2-hhm" secondAttribute="leading" id="BmX-Uo-SBW"/>
+                                    <constraint firstItem="ZX7-l2-hhm" firstAttribute="top" secondItem="Koo-vS-49E" secondAttribute="top" id="QWA-Kw-gp3"/>
+                                    <constraint firstItem="ZX7-l2-hhm" firstAttribute="leading" secondItem="3SM-q8-agE" secondAttribute="leading" id="Rta-Jq-Yrg"/>
+                                    <constraint firstItem="fSm-qE-00a" firstAttribute="trailing" secondItem="ZX7-l2-hhm" secondAttribute="trailing" id="Z27-PP-dTJ"/>
+                                    <constraint firstItem="fSm-qE-00a" firstAttribute="top" secondItem="ZX7-l2-hhm" secondAttribute="top" id="c2x-VW-yx7"/>
+                                    <constraint firstItem="3SM-q8-agE" firstAttribute="trailing" secondItem="ZX7-l2-hhm" secondAttribute="trailing" id="yXj-3D-QQF"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Koo-vS-49E"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="3SM-q8-agE"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RSs-sn-Joj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tSc-8j-vUP" secondAttribute="bottom" id="W1U-Oa-9uT"/>
+                            <constraint firstItem="RSs-sn-Joj" firstAttribute="trailing" secondItem="tSc-8j-vUP" secondAttribute="trailing" id="dzN-aX-WI2"/>
+                            <constraint firstItem="tSc-8j-vUP" firstAttribute="leading" secondItem="RSs-sn-Joj" secondAttribute="leading" id="poN-hN-pAt"/>
+                            <constraint firstItem="tSc-8j-vUP" firstAttribute="top" secondItem="o7p-da-STc" secondAttribute="top" id="tY3-Um-6p7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nW0-qM-1zu"/>
+                    <connections>
+                        <outlet property="featuredListDetailScrollView" destination="tSc-8j-vUP" id="HSX-AH-Qw7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5d-HZ-kMI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4336" y="-174"/>
+            <point key="canvasLocation" x="4333.3333333333339" y="-175.44642857142856"/>
         </scene>
         <!--首頁-->
         <scene sceneID="PAh-f1-ob3">
@@ -257,6 +296,7 @@
     </scenes>
     <resources>
         <image name="Icon_bell" width="24" height="24"/>
+        <image name="grid3" width="150" height="120"/>
         <image name="tab_news" width="24" height="24"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.56300002336502075" blue="0.3190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -28,8 +28,6 @@ class HomeViewController: UIViewController {
         featuredCollectionView.dataSource = self
     }
     @IBAction func cellPressed(_ sender: UIButton) {
-//        self.performSegue(withIdentifier: K.segueSpell.goToFeatureDetailDirectly, sender: self)
-        
         guard let vc2 = storyboard?.instantiateViewController(withIdentifier: "FeaturedList") else { return }
         guard let vc3 = storyboard?.instantiateViewController(withIdentifier: "FeaturedListDetail") else { return }
         
