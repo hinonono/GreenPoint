@@ -82,7 +82,7 @@
                                                                         <constraint firstItem="HAe-Af-Kg9" firstAttribute="leading" secondItem="Bin-Sv-ke8" secondAttribute="leading" id="wmg-tj-t9r"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZt-sU-M4r">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZt-sU-M4r" userLabel="cellPressed">
                                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                                                     <state key="normal" title="Button"/>
                                                                     <buttonConfiguration key="configuration" style="plain"/>
@@ -139,6 +139,9 @@
                                                         <buttonConfiguration key="configuration" style="gray" title="看全部">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="EVl-gt-pNl" kind="show" identifier="goToFeaturedList" id="fmT-YY-whD"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -187,7 +190,6 @@
                     <connections>
                         <outlet property="carousel" destination="JCn-Lz-H8y" id="Zbk-4r-iY9"/>
                         <outlet property="featuredCollectionView" destination="AYd-nv-Ynr" id="EpV-F3-Gk8"/>
-                        <segue destination="EVl-gt-pNl" kind="show" id="cw0-dk-m4Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PG6-Pm-71Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -197,7 +199,7 @@
         <!--最新消息-->
         <scene sceneID="R0M-e3-htw">
             <objects>
-                <viewController id="EVl-gt-pNl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeaturedList" id="EVl-gt-pNl" customClass="FeaturedListViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xBG-na-n0Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,17 +208,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="最新消息" id="gHG-Bp-OdH"/>
                     <connections>
-                        <segue destination="BSR-dc-355" kind="show" id="a7c-KI-iJ0"/>
+                        <segue destination="BSR-dc-355" kind="show" identifier="goToFeatureDetail" id="a7c-KI-iJ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1d-zp-Qgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3420" y="-174"/>
+            <point key="canvasLocation" x="3419" y="-173"/>
         </scene>
-        <!--View Controller-->
+        <!--Featured List Detail View Controller-->
         <scene sceneID="ONS-RA-Vll">
             <objects>
-                <viewController id="BSR-dc-355" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeaturedListDetail" id="BSR-dc-355" customClass="FeaturedListDetailViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o7p-da-STc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

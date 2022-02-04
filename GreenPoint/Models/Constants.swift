@@ -11,4 +11,7 @@ struct K {
     struct cellIdentifier {
         static let featuredCell = "featuredCell"
     }
+    
+    struct segueSpell {
+    }
 }
