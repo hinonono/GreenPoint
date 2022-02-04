@@ -29,9 +29,17 @@ class HomeViewController: UIViewController {
     }
     @IBAction func cellPressed(_ sender: UIButton) {
         guard let vc2 = storyboard?.instantiateViewController(withIdentifier: "FeaturedList") else { return }
-        guard let vc3 = storyboard?.instantiateViewController(withIdentifier: "FeaturedListDetail") else { return }
+        guard let vc3 = storyboard?.instantiateViewController(withIdentifier: "FeaturedListDetail") as? FeaturedListDetailViewController else { return }
         
         self.navigationController?.setViewControllers([self, vc2, vc3], animated: true)
+        
+        //計算使用者點擊了哪一個cell
+        let buttonPostion = sender.convert(sender.bounds.origin, to: featuredCollectionView)
+        if let indexPath = featuredCollectionView.indexPathForItem(at: buttonPostion) {
+            
+            //將點擊結果對應的indexpath作為數值傳入vc3的featured，用以查詢對應的文章標題、圖片
+            vc3.featured = featureds[indexPath[1]]
+        }
     }
     
 }

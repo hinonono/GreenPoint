@@ -235,12 +235,92 @@
                                                     <constraint firstAttribute="height" constant="350" id="L50-Xn-Lfg"/>
                                                 </constraints>
                                             </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o05-Ns-VlW" customClass="BlackToTransparentGradient" customModule="GreenPoint" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="Ix8-X7-B6c"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lZA-K4-Y6p">
+                                                <rect key="frame" x="28" y="378" width="358" height="102.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="環保集點xECOCO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St3-tB-PCt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="環保集點夏日感謝祭，綠色消費享多重回饋！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elx-2p-bLs">
+                                                        <rect key="frame" x="0.0" y="22.5" width="340.5" height="57.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.08.01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JF-Qz-Exp">
+                                                        <rect key="frame" x="0.0" y="88" width="61.5" height="14.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjk-EK-Pfh">
+                                                <rect key="frame" x="28" y="512.5" width="358" height="83.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="綠色消費點數加碼贈，再抽加碼好禮">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="，「任天堂">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Switch">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" metaFont="system" size="17"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="」、「百萬買對東西也可以改變世界，加入環保集點的行列，讓地球環境更美好！">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="lZA-K4-Y6p" firstAttribute="leading" secondItem="agn-Ma-mKQ" secondAttribute="leading" constant="28" id="1li-r9-w4H"/>
+                                            <constraint firstAttribute="trailing" secondItem="o05-Ns-VlW" secondAttribute="trailing" id="LMl-9V-umo"/>
+                                            <constraint firstItem="o05-Ns-VlW" firstAttribute="top" secondItem="agn-Ma-mKQ" secondAttribute="top" id="N6v-jJ-c5Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pjk-EK-Pfh" secondAttribute="trailing" constant="28" id="Shg-Yy-OzP"/>
+                                            <constraint firstAttribute="trailing" secondItem="lZA-K4-Y6p" secondAttribute="trailing" constant="28" id="XvV-w1-wFS"/>
                                             <constraint firstAttribute="trailing" secondItem="Wj8-Lx-qoF" secondAttribute="trailing" id="YwE-68-lh9"/>
                                             <constraint firstItem="Wj8-Lx-qoF" firstAttribute="top" secondItem="agn-Ma-mKQ" secondAttribute="top" id="ZBm-ky-ypk"/>
+                                            <constraint firstItem="lZA-K4-Y6p" firstAttribute="top" secondItem="Wj8-Lx-qoF" secondAttribute="bottom" constant="28" id="aV4-6l-c9P"/>
                                             <constraint firstItem="Wj8-Lx-qoF" firstAttribute="leading" secondItem="agn-Ma-mKQ" secondAttribute="leading" id="c6f-VC-wPK"/>
+                                            <constraint firstItem="Pjk-EK-Pfh" firstAttribute="leading" secondItem="agn-Ma-mKQ" secondAttribute="leading" constant="28" id="e70-pd-vd4"/>
+                                            <constraint firstItem="Pjk-EK-Pfh" firstAttribute="top" secondItem="lZA-K4-Y6p" secondAttribute="bottom" constant="32" id="mNc-0S-gqR"/>
+                                            <constraint firstItem="o05-Ns-VlW" firstAttribute="leading" secondItem="agn-Ma-mKQ" secondAttribute="leading" id="wqQ-SE-UYa"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -265,6 +345,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="nW0-qM-1zu"/>
                     <connections>
+                        <outlet property="articleImage" destination="Wj8-Lx-qoF" id="ddV-yY-2A0"/>
+                        <outlet property="articleSubtitle" destination="St3-tB-PCt" id="mdu-JG-Q2h"/>
+                        <outlet property="articleTitle" destination="Elx-2p-bLs" id="bBd-aJ-NiF"/>
+                        <outlet property="artitleDate" destination="8JF-Qz-Exp" id="w6c-GN-e8M"/>
+                        <outlet property="contentLabel" destination="Pjk-EK-Pfh" id="9bs-ef-fDF"/>
                         <outlet property="featuredListDetailScrollView" destination="ZxA-Cr-EgL" id="NCO-yQ-8ui"/>
                     </connections>
                 </viewController>
@@ -305,6 +390,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

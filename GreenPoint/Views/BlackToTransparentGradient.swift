@@ -17,8 +17,8 @@ class BlackToTransparentGradient: UIView {
         super.init(coder: aDecoder)
         let gradientLayer = self.layer as! CAGradientLayer
         gradientLayer.colors = [
-            UIColor.black.cgColor,
-            UIColor.init(white: 1, alpha: 0).cgColor
+            UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.6).cgColor,
+            UIColor.init(red: 0, green: 0, blue: 0, alpha: 0).cgColor
         ]
         backgroundColor = UIColor.clear
     }
