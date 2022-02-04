@@ -38,7 +38,7 @@
                                         <rect key="frame" x="0.0" y="230" width="413" height="310"/>
                                         <subviews>
                                             <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AYd-nv-Ynr">
-                                                <rect key="frame" x="0.0" y="67.5" width="413" height="221"/>
+                                                <rect key="frame" x="0.0" y="55.5" width="413" height="233"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="azh-Sf-vNu">
                                                     <size key="itemSize" width="150" height="180"/>
@@ -48,7 +48,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="featuredCell" id="NJ0-mg-I9L" customClass="FeaturedCollectionViewCell" customModule="GreenPoint" customModuleProvider="target">
-                                                        <rect key="frame" x="16" y="20.5" width="150" height="180"/>
+                                                        <rect key="frame" x="16" y="26.5" width="150" height="180"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yT6-QH-7lQ">
                                                             <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
@@ -154,7 +154,7 @@
                                             <constraint firstItem="wZh-bH-3a6" firstAttribute="top" secondItem="l1c-Yh-w1E" secondAttribute="top" constant="16" id="6bD-Qp-hmx"/>
                                             <constraint firstAttribute="height" constant="310" id="7nC-fO-EbG"/>
                                             <constraint firstAttribute="trailing" secondItem="AYd-nv-Ynr" secondAttribute="trailing" id="GdW-Hr-uKw"/>
-                                            <constraint firstItem="AYd-nv-Ynr" firstAttribute="top" secondItem="wZh-bH-3a6" secondAttribute="bottom" constant="12" id="QeH-aI-eBw"/>
+                                            <constraint firstItem="AYd-nv-Ynr" firstAttribute="top" secondItem="wZh-bH-3a6" secondAttribute="bottom" id="QeH-aI-eBw"/>
                                             <constraint firstItem="AYd-nv-Ynr" firstAttribute="leading" secondItem="l1c-Yh-w1E" secondAttribute="leading" id="nJg-Zk-TUs"/>
                                         </constraints>
                                     </view>
