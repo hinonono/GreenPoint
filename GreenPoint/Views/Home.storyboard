@@ -13,7 +13,7 @@
         <!--首頁-->
         <scene sceneID="ymW-wg-3hU">
             <objects>
-                <viewController id="dcq-0E-MpG" customClass="HomeViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="dcq-0E-MpG" customClass="HomeViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eMU-ON-V5o">
                         <rect key="frame" x="0.0" y="0.0" width="413" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,28 +206,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-eR-1Os">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="f4m-eR-1Os">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="featureTableCell" rowHeight="206" id="P8H-YF-cAX" customClass="FeaturedTableViewCell" customModule="GreenPoint" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="featureTableCell" rowHeight="206" id="P8H-YF-cAX" customClass="FeaturedTableViewCell" customModule="GreenPoint" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="206"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P8H-YF-cAX" id="bk5-TJ-IZp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="206"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eo1-SM-4ZM">
-                                                    <rect key="frame" x="16" y="16" width="382" height="174"/>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eo1-SM-4ZM">
+                                                    <rect key="frame" x="16" y="8" width="382" height="190"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grid1" translatesAutoresizingMaskIntoConstraints="NO" id="jDR-7k-iSf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="132" height="174"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="132" height="190"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="132" id="ExK-jk-E6K"/>
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YPK-Hc-nRV">
-                                                            <rect key="frame" x="152" y="20" width="210" height="112"/>
+                                                            <rect key="frame" x="152" y="16" width="210" height="112"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.08.01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQk-FN-8it">
                                                                     <rect key="frame" x="0.0" y="0.0" width="210" height="14.5"/>
@@ -244,33 +244,9 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-Dq-Mni">
                                                                     <rect key="frame" x="0.0" y="69" width="210" height="43"/>
                                                                     <attributedString key="attributedText">
-                                                                        <fragment content="綠色消費點數加碼贈，再抽加碼好禮">
-                                                                            <attributes>
-                                                                                <font key="NSFont" size="12" name=".PingFangTC-Regular"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment content=" ">
+                                                                        <fragment content="綠色消費點數加碼贈，再抽加碼好禮 ，「任天堂Switch」、「百萬買氣加碼送！">
                                                                             <attributes>
                                                                                 <font key="NSFont" metaFont="cellTitle"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment content="，「任天堂">
-                                                                            <attributes>
-                                                                                <font key="NSFont" size="12" name=".PingFangTC-Regular"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment content="Switch">
-                                                                            <attributes>
-                                                                                <font key="NSFont" metaFont="cellTitle"/>
-                                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
-                                                                            </attributes>
-                                                                        </fragment>
-                                                                        <fragment content="」、「百萬買氣加碼送！">
-                                                                            <attributes>
-                                                                                <font key="NSFont" size="12" name=".PingFangTC-Regular"/>
                                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
                                                                             </attributes>
                                                                         </fragment>
@@ -279,15 +255,29 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yH1-Vx-pC8">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="190"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="160" id="aKu-nF-ddL"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain"/>
+                                                            <connections>
+                                                                <action selector="cellPressed:" destination="EVl-gt-pNl" eventType="touchUpInside" id="Cgl-3e-AhP"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
+                                                        <constraint firstItem="yH1-Vx-pC8" firstAttribute="leading" secondItem="eo1-SM-4ZM" secondAttribute="leading" id="7HM-gn-jVa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="yH1-Vx-pC8" secondAttribute="bottom" id="B1Q-Y4-2a5"/>
                                                         <constraint firstItem="YPK-Hc-nRV" firstAttribute="leading" secondItem="jDR-7k-iSf" secondAttribute="trailing" constant="20" id="F2v-QI-4ua"/>
                                                         <constraint firstItem="jDR-7k-iSf" firstAttribute="top" secondItem="eo1-SM-4ZM" secondAttribute="top" id="OXR-41-73s"/>
                                                         <constraint firstItem="jDR-7k-iSf" firstAttribute="leading" secondItem="eo1-SM-4ZM" secondAttribute="leading" id="Pz3-e3-WgO"/>
+                                                        <constraint firstItem="yH1-Vx-pC8" firstAttribute="top" secondItem="eo1-SM-4ZM" secondAttribute="top" id="Y7F-iU-pdC"/>
                                                         <constraint firstAttribute="bottom" secondItem="jDR-7k-iSf" secondAttribute="bottom" id="bG5-QU-bno"/>
-                                                        <constraint firstAttribute="height" constant="160" id="bgG-OZ-TKy"/>
-                                                        <constraint firstItem="YPK-Hc-nRV" firstAttribute="top" secondItem="eo1-SM-4ZM" secondAttribute="top" constant="20" id="oJx-pV-rOu"/>
+                                                        <constraint firstItem="YPK-Hc-nRV" firstAttribute="top" secondItem="eo1-SM-4ZM" secondAttribute="top" constant="16" id="oJx-pV-rOu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yH1-Vx-pC8" secondAttribute="trailing" id="qf4-Kf-LjS"/>
                                                         <constraint firstAttribute="trailing" secondItem="YPK-Hc-nRV" secondAttribute="trailing" constant="20" id="tZO-v6-Neo"/>
                                                     </constraints>
                                                 </view>
@@ -295,8 +285,8 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="eo1-SM-4ZM" secondAttribute="trailing" constant="16" id="5Sk-ph-dL8"/>
                                                 <constraint firstItem="eo1-SM-4ZM" firstAttribute="leading" secondItem="bk5-TJ-IZp" secondAttribute="leading" constant="16" id="blz-oO-jt8"/>
-                                                <constraint firstAttribute="bottom" secondItem="eo1-SM-4ZM" secondAttribute="bottom" constant="16" id="luG-Wc-lQa"/>
-                                                <constraint firstItem="eo1-SM-4ZM" firstAttribute="top" secondItem="bk5-TJ-IZp" secondAttribute="top" constant="16" id="mJ3-sw-XKJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="eo1-SM-4ZM" secondAttribute="bottom" constant="8" id="luG-Wc-lQa"/>
+                                                <constraint firstItem="eo1-SM-4ZM" firstAttribute="top" secondItem="bk5-TJ-IZp" secondAttribute="top" constant="8" id="mJ3-sw-XKJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -322,14 +312,14 @@
                     <navigationItem key="navigationItem" title="最新消息" id="gHG-Bp-OdH"/>
                     <connections>
                         <outlet property="featuredTableView" destination="f4m-eR-1Os" id="Jah-T5-xcz"/>
-                        <segue destination="BSR-dc-355" kind="show" identifier="goToFeatureDetail" id="a7c-KI-iJ0"/>
+                        <segue destination="BSR-dc-355" kind="show" identifier="goToFeatureDetail" id="UvZ-dx-crt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1d-zp-Qgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3418.840579710145" y="-173.4375"/>
         </scene>
-        <!--Featured List Detail View Controller-->
+        <!--文章詳細-->
         <scene sceneID="ONS-RA-Vll">
             <objects>
                 <viewController storyboardIdentifier="FeaturedListDetail" hidesBottomBarWhenPushed="YES" id="BSR-dc-355" customClass="FeaturedListDetailViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
@@ -380,40 +370,12 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjk-EK-Pfh">
-                                                <rect key="frame" x="28" y="512.5" width="358" height="83.5"/>
+                                                <rect key="frame" x="28" y="512.5" width="358" height="114"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="綠色消費點數加碼贈，再抽加碼好禮">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content=" ">
+                                                    <fragment content="綠色消費點數加碼贈，再抽加碼好禮 ，「任天堂Switch」、「百萬買對東西也可以改變世界，加入環保集點的行列，讓地球環境更美好！">
                                                         <attributes>
                                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                             <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="，「任天堂">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="Switch">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                    <fragment content="」、「百萬買對東西也可以改變世界，加入環保集點的行列，讓地球環境更美好！">
-                                                        <attributes>
-                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                            <font key="NSFont" size="17" name=".PingFangTC-Regular"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -457,7 +419,7 @@
                             <constraint firstAttribute="trailing" secondItem="ZxA-Cr-EgL" secondAttribute="trailing" id="xUo-9m-KRw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nW0-qM-1zu"/>
+                    <navigationItem key="navigationItem" title="文章詳細" id="nW0-qM-1zu"/>
                     <connections>
                         <outlet property="articleImage" destination="Wj8-Lx-qoF" id="ddV-yY-2A0"/>
                         <outlet property="articleSubtitle" destination="St3-tB-PCt" id="mdu-JG-Q2h"/>

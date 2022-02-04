@@ -127,8 +127,8 @@
 				26CA10B627AA740200ECA491 /* Member.storyboard */,
 				26CA10C227AA8F2C00ECA491 /* PostView.swift */,
 				264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */,
-				261CC87A27ACFE6600B470FB /* BlackToTransparentGradient.swift */,
 				261CC87C27AD384C00B470FB /* FeaturedTableViewCell.swift */,
+				261CC87A27ACFE6600B470FB /* BlackToTransparentGradient.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
