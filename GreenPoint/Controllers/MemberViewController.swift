@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class MemberViewController: UIViewController {
     
@@ -18,7 +19,10 @@ class MemberViewController: UIViewController {
         memberSettingTableView.dataSource = self
     }
 
-
+    @IBSegueAction func showSettingList(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: MemberSettingView())
+    }
+    
 }
 
 extension MemberViewController: UITableViewDelegate, UITableViewDataSource {

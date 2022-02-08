@@ -247,7 +247,7 @@
                     <navigationItem key="navigationItem" title="會員" id="BIK-fC-rht">
                         <barButtonItem key="rightBarButtonItem" image="icon_setting" id="zs5-VF-Bvi">
                             <connections>
-                                <segue destination="ZuS-Vu-O98" kind="show" id="Y4g-Io-Y8u"/>
+                                <segue destination="JMg-1c-o0x" kind="show" destinationCreationSelector="showSettingList:" id="PXO-sc-M1o"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -260,45 +260,14 @@
             <point key="canvasLocation" x="423.1884057971015" y="521.65178571428567"/>
         </scene>
         <!--設定-->
-        <scene sceneID="hGh-Li-hlz">
+        <scene sceneID="VIK-GZ-NOf">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="ZuS-Vu-O98" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QqF-Th-iAJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rph-MM-7m6">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngG-gR-YOC">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="ngG-gR-YOC" firstAttribute="centerY" secondItem="rph-MM-7m6" secondAttribute="centerY" priority="250" id="1bM-z3-M4F"/>
-                                    <constraint firstItem="ngG-gR-YOC" firstAttribute="top" secondItem="rph-MM-7m6" secondAttribute="top" id="MTc-4U-o8U"/>
-                                    <constraint firstItem="ngG-gR-YOC" firstAttribute="centerX" secondItem="rph-MM-7m6" secondAttribute="centerX" id="Vke-7w-NSf"/>
-                                    <constraint firstAttribute="bottom" secondItem="ngG-gR-YOC" secondAttribute="bottom" priority="250" id="WWc-EM-5Cc"/>
-                                    <constraint firstAttribute="trailing" secondItem="ngG-gR-YOC" secondAttribute="trailing" id="iYI-7y-WjX"/>
-                                    <constraint firstItem="ngG-gR-YOC" firstAttribute="leading" secondItem="rph-MM-7m6" secondAttribute="leading" id="w9E-A4-vo8"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="CKM-Xc-sHb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="rph-MM-7m6" firstAttribute="trailing" secondItem="CKM-Xc-sHb" secondAttribute="trailing" id="Uwt-Bm-28p"/>
-                            <constraint firstItem="rph-MM-7m6" firstAttribute="top" secondItem="CKM-Xc-sHb" secondAttribute="top" id="ZzE-Mq-BBY"/>
-                            <constraint firstAttribute="bottom" secondItem="rph-MM-7m6" secondAttribute="bottom" id="cEf-Fy-Fhq"/>
-                            <constraint firstItem="rph-MM-7m6" firstAttribute="leading" secondItem="CKM-Xc-sHb" secondAttribute="leading" id="g8v-YB-DbX"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="設定" id="e83-yC-Zm1"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dCP-20-NmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <hostingController id="JMg-1c-o0x" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="設定" id="9w5-lT-o85"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pof-lL-vfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486.9565217391305" y="521.65178571428567"/>
+            <point key="canvasLocation" x="1384" y="522"/>
         </scene>
         <!--會員-->
         <scene sceneID="cU5-bY-mGw">
@@ -330,9 +299,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.56300002336502075" blue="0.3190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
