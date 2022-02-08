@@ -30,3 +30,18 @@ let personalInfoSettings = [
     MemberSettings(title: "居住地"),
     MemberSettings(title: "更改密碼")
 ]
+
+let preferenceSettings = [
+    MemberSettings(title: "通知"),
+    MemberSettings(title: "字體大小"),
+    MemberSettings(title: "快速登入"),
+    MemberSettings(title: "深色模式")
+]
+
+let knowMoreSettings = [
+    MemberSettings(title: "環保集點 官網"),
+    MemberSettings(title: "官方粉絲專頁"),
+    MemberSettings(title: "關於 環保集點"),
+    MemberSettings(title: "常見問題"),
+    MemberSettings(title: "合作單位")
+]

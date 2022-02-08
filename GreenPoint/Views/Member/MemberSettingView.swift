@@ -17,11 +17,28 @@ struct MemberSettingView: View {
                             Text(personalInfoSettings[item].title)
                         }
                     }
-                    
-                    
-
                 }, header: {
                     Text("個人資料")
+                })
+                
+                Section(content: {
+                    ForEach(0..<preferenceSettings.count) { item in
+                        NavigationLink(destination: Text("fff")) {
+                            Text(preferenceSettings[item].title)
+                        }
+                    }
+                }, header: {
+                    Text("偏好設定")
+                })
+                
+                Section(content: {
+                    ForEach(0..<knowMoreSettings.count) { item in
+                        NavigationLink(destination: Text("fff")) {
+                            Text(knowMoreSettings[item].title)
+                        }
+                    }
+                }, header: {
+                    Text("了解我們")
                 })
             }
             .navigationTitle(Text("設定"))
