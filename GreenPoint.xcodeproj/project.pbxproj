@@ -14,6 +14,8 @@
 		261CC87D27AD384C00B470FB /* FeaturedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87C27AD384C00B470FB /* FeaturedTableViewCell.swift */; };
 		264BDF6227ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */; };
 		264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6327ABCF55008F8F88 /* Featured.swift */; };
+		268C3DE127B2C46200EF748A /* Carriers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C3DE027B2C46200EF748A /* Carriers.swift */; };
+		268C3DE427B2C48B00EF748A /* CarrierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C3DE327B2C48B00EF748A /* CarrierTableViewCell.swift */; };
 		2696F71327AD6DE1009AAE20 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71227AD6DE1009AAE20 /* NotificationTableViewCell.swift */; };
 		2696F71627AD6F0E009AAE20 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71527AD6F0E009AAE20 /* NotificationTableViewController.swift */; };
 		2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */; };
@@ -51,6 +53,8 @@
 		261CC87C27AD384C00B470FB /* FeaturedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTableViewCell.swift; sourceTree = "<group>"; };
 		264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
 		264BDF6327ABCF55008F8F88 /* Featured.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Featured.swift; sourceTree = "<group>"; };
+		268C3DE027B2C46200EF748A /* Carriers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carriers.swift; sourceTree = "<group>"; };
+		268C3DE327B2C48B00EF748A /* CarrierTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierTableViewCell.swift; sourceTree = "<group>"; };
 		2696F71227AD6DE1009AAE20 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		2696F71527AD6F0E009AAE20 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableDetailViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,21 @@
 				261CC87827ACE38900B470FB /* FeaturedListDetailViewController.swift */,
 			);
 			path = Featured;
+			sourceTree = "<group>";
+		};
+		268C3DDF27B2C42100EF748A /* Carriers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Carriers;
+			sourceTree = "<group>";
+		};
+		268C3DE227B2C47900EF748A /* Carriers */ = {
+			isa = PBXGroup;
+			children = (
+				268C3DE327B2C48B00EF748A /* CarrierTableViewCell.swift */,
+			);
+			path = Carriers;
 			sourceTree = "<group>";
 		};
 		2696F70F27AD6D77009AAE20 /* Featured */ = {
@@ -188,6 +207,7 @@
 		26CA10AA27AA67B100ECA491 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				268C3DE227B2C47900EF748A /* Carriers */,
 				26BC743727B23480007AD50D /* Helpers */,
 				2696F71027AD6D9E009AAE20 /* Others */,
 				2696F70F27AD6D77009AAE20 /* Featured */,
@@ -208,6 +228,7 @@
 		26CA10AC27AA67BD00ECA491 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				268C3DDF27B2C42100EF748A /* Carriers */,
 				261CC87527ACE35200B470FB /* Featured */,
 				2696F71427AD6EE0009AAE20 /* Notifications */,
 				26CA10BA27AA758F00ECA491 /* HomeViewController.swift */,
@@ -227,6 +248,7 @@
 				261CC87327ACD69700B470FB /* Constants.swift */,
 				2696F71927AD701F009AAE20 /* Notification.swift */,
 				26BC744227B24DC0007AD50D /* MemberSettings.swift */,
+				268C3DE027B2C46200EF748A /* Carriers.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,8 +349,10 @@
 				26BC744727B25C07007AD50D /* MemberSettingView.swift in Sources */,
 				26BC744327B24DC0007AD50D /* MemberSettings.swift in Sources */,
 				2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */,
+				268C3DE427B2C48B00EF748A /* CarrierTableViewCell.swift in Sources */,
 				261CC87427ACD69700B470FB /* Constants.swift in Sources */,
 				26BC743927B234AB007AD50D /* CustomUIView.swift in Sources */,
+				268C3DE127B2C46200EF748A /* Carriers.swift in Sources */,
 				2696F71A27AD701F009AAE20 /* Notification.swift in Sources */,
 				26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */,
 				26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */,
