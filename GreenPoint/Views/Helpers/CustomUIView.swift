@@ -16,6 +16,12 @@ class CustomUIView: UIView {
         }
     }
     
+    @IBInspectable var maskToBounds: Bool = false {
+        didSet {
+            layer.masksToBounds = maskToBounds
+        }
+    }
+    
     @IBInspectable var shadowOpacity: Float = 0.0 {
         didSet {
             layer.shadowOpacity = shadowOpacity
