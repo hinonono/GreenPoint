@@ -10,4 +10,5 @@ import SwiftUI
 struct Post: Identifiable, Hashable {
     var id: Int
     var image: String
+    //ee
 }
