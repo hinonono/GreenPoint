@@ -262,7 +262,7 @@
         <!--設定-->
         <scene sceneID="VIK-GZ-NOf">
             <objects>
-                <hostingController id="JMg-1c-o0x" sceneMemberID="viewController">
+                <hostingController hidesBottomBarWhenPushed="YES" id="JMg-1c-o0x" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="設定" id="9w5-lT-o85"/>
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pof-lL-vfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
