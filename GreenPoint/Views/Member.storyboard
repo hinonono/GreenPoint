@@ -158,19 +158,40 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGf-9q-yJU">
-                                                <rect key="frame" x="16" y="343" width="382" height="449"/>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                            </view>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TCP-kC-5Z7">
+                                                <rect key="frame" x="0.0" y="343" width="414" height="449"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Goi-FV-pdl" style="IBUITableViewCellStyleDefault" id="neo-Eg-5dE" customClass="MemeberSettingsTableViewCell" customModule="GreenPoint" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="49.5" width="374" height="43.5"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="neo-Eg-5dE" id="lwJ-dt-IQ7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345.5" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Goi-FV-pdl">
+                                                                    <rect key="frame" x="20" y="0.0" width="317.5" height="43.5"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="titleLabel" destination="Goi-FV-pdl" id="Sf4-gL-dri"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="gGf-9q-yJU" firstAttribute="top" secondItem="mfS-hn-A9O" secondAttribute="bottom" constant="32" id="6Ex-1L-Huq"/>
-                                            <constraint firstAttribute="trailing" secondItem="gGf-9q-yJU" secondAttribute="trailing" constant="16" id="Hia-tZ-2uB"/>
                                             <constraint firstItem="mfS-hn-A9O" firstAttribute="leading" secondItem="iB7-iX-GR9" secondAttribute="leading" constant="16" id="LzX-GE-mtF"/>
-                                            <constraint firstAttribute="bottom" secondItem="gGf-9q-yJU" secondAttribute="bottom" constant="16" id="RJv-aC-wYK"/>
+                                            <constraint firstItem="TCP-kC-5Z7" firstAttribute="leading" secondItem="iB7-iX-GR9" secondAttribute="leading" id="YwB-5q-45W"/>
                                             <constraint firstAttribute="trailing" secondItem="mfS-hn-A9O" secondAttribute="trailing" constant="16" id="amc-yG-nlg"/>
-                                            <constraint firstItem="gGf-9q-yJU" firstAttribute="leading" secondItem="iB7-iX-GR9" secondAttribute="leading" constant="16" id="rUT-cW-6wK"/>
+                                            <constraint firstAttribute="bottom" secondItem="TCP-kC-5Z7" secondAttribute="bottom" constant="16" id="dIg-M0-AUe"/>
+                                            <constraint firstItem="TCP-kC-5Z7" firstAttribute="top" secondItem="mfS-hn-A9O" secondAttribute="bottom" constant="32" id="w8D-tV-wkf"/>
                                             <constraint firstItem="mfS-hn-A9O" firstAttribute="top" secondItem="iB7-iX-GR9" secondAttribute="top" constant="16" id="xwO-Wx-Q3Y"/>
+                                            <constraint firstAttribute="trailing" secondItem="TCP-kC-5Z7" secondAttribute="trailing" id="zZ3-lC-Xn5"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -196,6 +217,9 @@
                     <navigationItem key="navigationItem" title="會員" id="BIK-fC-rht">
                         <barButtonItem key="rightBarButtonItem" image="icon_setting" id="zs5-VF-Bvi"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="memberSettingTableView" destination="TCP-kC-5Z7" id="A3x-Ei-uO3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COq-oD-R1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,9 +256,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

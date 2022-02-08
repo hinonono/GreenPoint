@@ -20,6 +20,8 @@
 		2696F71A27AD701F009AAE20 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71927AD701F009AAE20 /* Notification.swift */; };
 		26BC743927B234AB007AD50D /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC743827B234AB007AD50D /* CustomUIView.swift */; };
 		26BC743B27B2384B007AD50D /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC743A27B2384B007AD50D /* GradientBackgroundView.swift */; };
+		26BC744327B24DC0007AD50D /* MemberSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC744227B24DC0007AD50D /* MemberSettings.swift */; };
+		26BC744527B24FC2007AD50D /* MemeberSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC744427B24FC2007AD50D /* MemeberSettingsTableViewCell.swift */; };
 		26CA109427AA678C00ECA491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109327AA678C00ECA491 /* AppDelegate.swift */; };
 		26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109527AA678C00ECA491 /* SceneDelegate.swift */; };
 		26CA109827AA678C00ECA491 /* RedeemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA109727AA678C00ECA491 /* RedeemViewController.swift */; };
@@ -54,6 +56,8 @@
 		2696F71927AD701F009AAE20 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		26BC743827B234AB007AD50D /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		26BC743A27B2384B007AD50D /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
+		26BC744227B24DC0007AD50D /* MemberSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberSettings.swift; sourceTree = "<group>"; };
+		26BC744427B24FC2007AD50D /* MemeberSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeberSettingsTableViewCell.swift; sourceTree = "<group>"; };
 		26CA109027AA678C00ECA491 /* GreenPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26CA109327AA678C00ECA491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26CA109527AA678C00ECA491 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 		26BC743227B22B66007AD50D /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				26BC744427B24FC2007AD50D /* MemeberSettingsTableViewCell.swift */,
 			);
 			path = Member;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				264BDF6327ABCF55008F8F88 /* Featured.swift */,
 				261CC87327ACD69700B470FB /* Constants.swift */,
 				2696F71927AD701F009AAE20 /* Notification.swift */,
+				26BC744227B24DC0007AD50D /* MemberSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				26BC743B27B2384B007AD50D /* GradientBackgroundView.swift in Sources */,
 				26CA10BD27AA75AF00ECA491 /* MemberViewController.swift in Sources */,
 				26CA109427AA678C00ECA491 /* AppDelegate.swift in Sources */,
+				26BC744527B24FC2007AD50D /* MemeberSettingsTableViewCell.swift in Sources */,
 				26CA10B927AA753900ECA491 /* CouponViewController.swift in Sources */,
 				26CA109E27AA678C00ECA491 /* GreenPoint.xcdatamodeld in Sources */,
 				26CA10BF27AA75CF00ECA491 /* CarrierViewController.swift in Sources */,
@@ -314,6 +321,7 @@
 				2696F71627AD6F0E009AAE20 /* NotificationTableViewController.swift in Sources */,
 				264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */,
 				261CC87B27ACFE6600B470FB /* BlackToTransparentGradient.swift in Sources */,
+				26BC744327B24DC0007AD50D /* MemberSettings.swift in Sources */,
 				2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */,
 				261CC87427ACD69700B470FB /* Constants.swift in Sources */,
 				26BC743927B234AB007AD50D /* CustomUIView.swift in Sources */,
