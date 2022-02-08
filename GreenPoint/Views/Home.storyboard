@@ -192,7 +192,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="首頁" id="Ks6-YO-5yV">
-                        <barButtonItem key="rightBarButtonItem" title="bell" image="Icon_bell" id="HJO-Wd-PEC">
+                        <barButtonItem key="rightBarButtonItem" title="bell" image="icon_bell" id="HJO-Wd-PEC">
                             <connections>
                                 <segue destination="bTQ-bS-tJp" kind="show" id="oek-Pg-4jd"/>
                             </connections>
@@ -524,8 +524,8 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCu-B9-dt5">
-                                                            <rect key="frame" x="-8" y="-19" width="382" height="182"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCu-B9-dt5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="182"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="160" id="OFc-zW-aT3"/>
                                                             </constraints>
@@ -707,9 +707,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Icon_bell" width="24" height="24"/>
         <image name="grid1" width="150" height="120"/>
         <image name="grid3" width="150" height="120"/>
+        <image name="icon_bell" width="24" height="24"/>
         <image name="tab_news" width="24" height="24"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.56300002336502075" blue="0.3190000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
