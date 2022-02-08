@@ -9,6 +9,7 @@
 import UIKit
 
 class BlackToTransparentGradient: UIView {
+    
     override open class var layerClass: AnyClass {
         return CAGradientLayer.classForCoder()
     }
