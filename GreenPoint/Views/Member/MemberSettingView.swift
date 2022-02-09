@@ -47,6 +47,7 @@ struct MemberSettingView: View {
                     HStack {
                         Spacer()
                         Text("登出")
+                            .fontWeight(.bold)
                         Spacer()
                     }
                 })

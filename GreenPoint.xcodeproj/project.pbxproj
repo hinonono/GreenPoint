@@ -20,6 +20,7 @@
 		2696F71627AD6F0E009AAE20 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71527AD6F0E009AAE20 /* NotificationTableViewController.swift */; };
 		2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */; };
 		2696F71A27AD701F009AAE20 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71927AD701F009AAE20 /* Notification.swift */; };
+		269D849027B3846500DA28B2 /* CarrierDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D848F27B3846500DA28B2 /* CarrierDetailView.swift */; };
 		26BC743927B234AB007AD50D /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC743827B234AB007AD50D /* CustomUIView.swift */; };
 		26BC743B27B2384B007AD50D /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC743A27B2384B007AD50D /* GradientBackgroundView.swift */; };
 		26BC744327B24DC0007AD50D /* MemberSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC744227B24DC0007AD50D /* MemberSettings.swift */; };
@@ -59,6 +60,7 @@
 		2696F71527AD6F0E009AAE20 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableDetailViewController.swift; sourceTree = "<group>"; };
 		2696F71927AD701F009AAE20 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		269D848F27B3846500DA28B2 /* CarrierDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierDetailView.swift; sourceTree = "<group>"; };
 		26BC743827B234AB007AD50D /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		26BC743A27B2384B007AD50D /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
 		26BC744227B24DC0007AD50D /* MemberSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberSettings.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				268C3DE327B2C48B00EF748A /* CarrierTableViewCell.swift */,
+				269D848F27B3846500DA28B2 /* CarrierDetailView.swift */,
 			);
 			path = Carriers;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				2696F71A27AD701F009AAE20 /* Notification.swift in Sources */,
 				26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */,
 				26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */,
+				269D849027B3846500DA28B2 /* CarrierDetailView.swift in Sources */,
 				261CC87927ACE38900B470FB /* FeaturedListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

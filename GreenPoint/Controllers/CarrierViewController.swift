@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class CarrierViewController: UIViewController {
 
@@ -22,7 +23,10 @@ class CarrierViewController: UIViewController {
         carrierTableView.backgroundColor = UIColor(named: "systemGray6")
     }
 
-
+    @IBSegueAction func carrierDetailView(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: CarrierDetailView(toggleIsOn: true))
+    }
+    
 }
 
 extension CarrierViewController: UITableViewDelegate, UITableViewDataSource {
