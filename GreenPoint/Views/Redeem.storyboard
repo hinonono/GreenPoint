@@ -39,7 +39,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pfd-D4-Dih">
-                                <rect key="frame" x="16" y="151" width="382" height="729"/>
+                                <rect key="frame" x="16" y="151" width="382" height="711"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H2p-xs-xsY">
                                     <size key="itemSize" width="187" height="238"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -71,9 +71,12 @@
                                                             </constraints>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="favoritedPressed:" destination="aFj-im-kMy" eventType="touchUpInside" id="HzO-5i-1vK"/>
+                                                            </connections>
                                                         </button>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CDO-n0-Vsr">
-                                                            <rect key="frame" x="16" y="170" width="148" height="61"/>
+                                                            <rect key="frame" x="16" y="170" width="148" height="63"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Cxe-5F-sno">
                                                                     <rect key="frame" x="0.0" y="0.0" width="148" height="31"/>
@@ -93,18 +96,18 @@
                                                                     </subviews>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fh8-Za-88i">
-                                                                    <rect key="frame" x="0.0" y="47" width="148" height="14"/>
+                                                                    <rect key="frame" x="0.0" y="47" width="148" height="16"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gp" translatesAutoresizingMaskIntoConstraints="NO" id="GhD-db-tcq">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="14" id="GrT-lw-Di9"/>
-                                                                                <constraint firstAttribute="height" constant="14" id="NAg-WX-uui"/>
+                                                                                <constraint firstAttribute="width" constant="16" id="GrT-lw-Di9"/>
+                                                                                <constraint firstAttribute="height" constant="16" id="NAg-WX-uui"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syg-f0-UDa">
-                                                                            <rect key="frame" x="22" y="0.0" width="126" height="14"/>
-                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                            <rect key="frame" x="24" y="0.0" width="124" height="16"/>
+                                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                                             <color key="textColor" name="AccentColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -160,7 +163,7 @@
                             <constraint firstItem="Pfd-D4-Dih" firstAttribute="top" secondItem="6gC-bz-ski" secondAttribute="bottom" constant="16" id="RMm-jt-s8u"/>
                             <constraint firstItem="6gC-bz-ski" firstAttribute="top" secondItem="HhW-v2-TIf" secondAttribute="top" constant="16" id="WtN-pT-7WN"/>
                             <constraint firstItem="Pfd-D4-Dih" firstAttribute="leading" secondItem="HhW-v2-TIf" secondAttribute="leading" constant="16" id="jhC-eG-VXe"/>
-                            <constraint firstAttribute="bottom" secondItem="Pfd-D4-Dih" secondAttribute="bottom" constant="16" id="kn2-Jw-Juj"/>
+                            <constraint firstItem="HhW-v2-TIf" firstAttribute="bottom" secondItem="Pfd-D4-Dih" secondAttribute="bottom" id="kn2-Jw-Juj"/>
                             <constraint firstItem="HhW-v2-TIf" firstAttribute="trailing" secondItem="Pfd-D4-Dih" secondAttribute="trailing" constant="16" id="yUU-Yf-IEa"/>
                         </constraints>
                     </view>

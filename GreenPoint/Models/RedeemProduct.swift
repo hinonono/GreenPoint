@@ -11,7 +11,7 @@ struct RedeemProduct {
     let productImage: UIImage
     let productName: String
     let category: String
-    let isFavorited: Bool
+    var isFavorited: Bool
     let requirement: Int
     
     init(productImage: String, category: String, productName: String, requirement: Int, isFavorited: Bool) {
@@ -23,7 +23,7 @@ struct RedeemProduct {
     }
 }
 
-let redeemProducts = [
+var redeemProducts = [
     RedeemProduct(productImage: "product1", category: "西湖度假村", productName: "50元門票折價券", requirement: 5000, isFavorited: false),
     RedeemProduct(productImage: "product1", category: "西湖度假村", productName: "50元門票折價券", requirement: 3000, isFavorited: false),
     RedeemProduct(productImage: "product1", category: "西湖度假村", productName: "50元門票折價券", requirement: 2000, isFavorited: false),
