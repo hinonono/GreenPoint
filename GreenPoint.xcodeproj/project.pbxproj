@@ -21,6 +21,8 @@
 		2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */; };
 		2696F71A27AD701F009AAE20 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696F71927AD701F009AAE20 /* Notification.swift */; };
 		269D849027B3846500DA28B2 /* CarrierDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D848F27B3846500DA28B2 /* CarrierDetailView.swift */; };
+		269D849327B39A4000DA28B2 /* RedeemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D849227B39A4000DA28B2 /* RedeemCollectionViewCell.swift */; };
+		269D849527B39C0000DA28B2 /* RedeemProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269D849427B39C0000DA28B2 /* RedeemProduct.swift */; };
 		26BC743927B234AB007AD50D /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC743827B234AB007AD50D /* CustomUIView.swift */; };
 		26BC743B27B2384B007AD50D /* GradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC743A27B2384B007AD50D /* GradientBackgroundView.swift */; };
 		26BC744327B24DC0007AD50D /* MemberSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BC744227B24DC0007AD50D /* MemberSettings.swift */; };
@@ -61,6 +63,8 @@
 		2696F71727AD6F5E009AAE20 /* NotificationTableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableDetailViewController.swift; sourceTree = "<group>"; };
 		2696F71927AD701F009AAE20 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		269D848F27B3846500DA28B2 /* CarrierDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierDetailView.swift; sourceTree = "<group>"; };
+		269D849227B39A4000DA28B2 /* RedeemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemCollectionViewCell.swift; sourceTree = "<group>"; };
+		269D849427B39C0000DA28B2 /* RedeemProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemProduct.swift; sourceTree = "<group>"; };
 		26BC743827B234AB007AD50D /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		26BC743A27B2384B007AD50D /* GradientBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackgroundView.swift; sourceTree = "<group>"; };
 		26BC744227B24DC0007AD50D /* MemberSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberSettings.swift; sourceTree = "<group>"; };
@@ -158,6 +162,14 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
+		269D849127B39A2D00DA28B2 /* Redeem */ = {
+			isa = PBXGroup;
+			children = (
+				269D849227B39A4000DA28B2 /* RedeemCollectionViewCell.swift */,
+			);
+			path = Redeem;
+			sourceTree = "<group>";
+		};
 		26BC743227B22B66007AD50D /* Member */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +222,7 @@
 		26CA10AA27AA67B100ECA491 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				269D849127B39A2D00DA28B2 /* Redeem */,
 				268C3DE227B2C47900EF748A /* Carriers */,
 				26BC743727B23480007AD50D /* Helpers */,
 				2696F71027AD6D9E009AAE20 /* Others */,
@@ -252,6 +265,7 @@
 				2696F71927AD701F009AAE20 /* Notification.swift */,
 				26BC744227B24DC0007AD50D /* MemberSettings.swift */,
 				268C3DE027B2C46200EF748A /* Carriers.swift */,
+				269D849427B39C0000DA28B2 /* RedeemProduct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,10 +362,12 @@
 				26CA109627AA678C00ECA491 /* SceneDelegate.swift in Sources */,
 				2696F71627AD6F0E009AAE20 /* NotificationTableViewController.swift in Sources */,
 				264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */,
+				269D849327B39A4000DA28B2 /* RedeemCollectionViewCell.swift in Sources */,
 				261CC87B27ACFE6600B470FB /* BlackToTransparentGradient.swift in Sources */,
 				26BC744727B25C07007AD50D /* MemberSettingView.swift in Sources */,
 				26BC744327B24DC0007AD50D /* MemberSettings.swift in Sources */,
 				2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */,
+				269D849527B39C0000DA28B2 /* RedeemProduct.swift in Sources */,
 				268C3DE427B2C48B00EF748A /* CarrierTableViewCell.swift in Sources */,
 				261CC87427ACD69700B470FB /* Constants.swift in Sources */,
 				26BC743927B234AB007AD50D /* CustomUIView.swift in Sources */,
