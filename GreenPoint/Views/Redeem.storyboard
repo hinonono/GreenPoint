@@ -202,7 +202,7 @@
         <!--詳細-->
         <scene sceneID="gjp-4I-XXa">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="JiT-qt-akz" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="JiT-qt-akz" customClass="RedeemDetailViewController" customModule="GreenPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ybX-b5-58E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,10 +275,13 @@
                                 </constraints>
                             </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mg3-vc-Cgr">
-                                <rect key="frame" x="0.0" y="780" width="414" height="82"/>
+                                <rect key="frame" x="0.0" y="814" width="414" height="82"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXG-Uw-V5Q">
                                         <rect key="frame" x="16" y="16" width="382" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="uhb-Ja-y0Z"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="兌換"/>
                                     </button>
@@ -288,8 +291,7 @@
                                     <constraint firstItem="iXG-Uw-V5Q" firstAttribute="top" secondItem="mg3-vc-Cgr" secondAttribute="top" constant="16" id="7R7-P9-chY"/>
                                     <constraint firstAttribute="trailing" secondItem="iXG-Uw-V5Q" secondAttribute="trailing" constant="16" id="HLO-cV-9EQ"/>
                                     <constraint firstItem="iXG-Uw-V5Q" firstAttribute="leading" secondItem="mg3-vc-Cgr" secondAttribute="leading" constant="16" id="NCb-4a-5d9"/>
-                                    <constraint firstAttribute="bottom" secondItem="iXG-Uw-V5Q" secondAttribute="bottom" constant="16" id="tqQ-sU-2yy"/>
-                                    <constraint firstAttribute="height" constant="82" id="xoG-l7-i17"/>
+                                    <constraint firstAttribute="bottom" secondItem="iXG-Uw-V5Q" secondAttribute="bottom" constant="16" id="zEE-aK-bGF"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -301,11 +303,15 @@
                             <constraint firstItem="Pgy-lC-uc1" firstAttribute="trailing" secondItem="xqS-Ns-HnT" secondAttribute="trailing" id="Wtg-2n-Qfv"/>
                             <constraint firstItem="Pgy-lC-uc1" firstAttribute="leading" secondItem="xqS-Ns-HnT" secondAttribute="leading" id="ZcK-8Y-Lem"/>
                             <constraint firstItem="xqS-Ns-HnT" firstAttribute="trailing" secondItem="mg3-vc-Cgr" secondAttribute="trailing" id="hyt-zT-Gui"/>
-                            <constraint firstItem="xqS-Ns-HnT" firstAttribute="bottom" secondItem="mg3-vc-Cgr" secondAttribute="bottom" id="pqq-xv-bHJ"/>
+                            <constraint firstAttribute="bottom" secondItem="mg3-vc-Cgr" secondAttribute="bottom" id="pqq-xv-bHJ"/>
                             <constraint firstItem="mg3-vc-Cgr" firstAttribute="leading" secondItem="xqS-Ns-HnT" secondAttribute="leading" id="r2q-ER-2q1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="詳細" id="2dg-fc-tw9"/>
+                    <connections>
+                        <outlet property="bottomBar" destination="mg3-vc-Cgr" id="EeM-rI-jul"/>
+                        <outlet property="bottomBarToBottom" destination="zEE-aK-bGF" id="yzw-Yl-dWA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Gj-ZO-BTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

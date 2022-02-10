@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260CE6F327B49F820078E064 /* RedeemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260CE6F227B49F820078E064 /* RedeemDetailViewController.swift */; };
 		261CC87427ACD69700B470FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87327ACD69700B470FB /* Constants.swift */; };
 		261CC87727ACE37100B470FB /* FeaturedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87627ACE37100B470FB /* FeaturedListViewController.swift */; };
 		261CC87927ACE38900B470FB /* FeaturedListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87827ACE38900B470FB /* FeaturedListDetailViewController.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260CE6F227B49F820078E064 /* RedeemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemDetailViewController.swift; sourceTree = "<group>"; };
 		261CC87327ACD69700B470FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		261CC87627ACE37100B470FB /* FeaturedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedListViewController.swift; sourceTree = "<group>"; };
 		261CC87827ACE38900B470FB /* FeaturedListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedListDetailViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260CE6F127B49F6B0078E064 /* Redeem */ = {
+			isa = PBXGroup;
+			children = (
+				260CE6F227B49F820078E064 /* RedeemDetailViewController.swift */,
+			);
+			path = Redeem;
+			sourceTree = "<group>";
+		};
 		261CC87527ACE35200B470FB /* Featured */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +257,7 @@
 		26CA10AC27AA67BD00ECA491 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				260CE6F127B49F6B0078E064 /* Redeem */,
 				268C3DDF27B2C42100EF748A /* Carriers */,
 				261CC87527ACE35200B470FB /* Featured */,
 				2696F71427AD6EE0009AAE20 /* Notifications */,
@@ -380,6 +391,7 @@
 				26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */,
 				26CA10BB27AA758F00ECA491 /* HomeViewController.swift in Sources */,
 				269D849027B3846500DA28B2 /* CarrierDetailView.swift in Sources */,
+				260CE6F327B49F820078E064 /* RedeemDetailViewController.swift in Sources */,
 				261CC87927ACE38900B470FB /* FeaturedListDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
