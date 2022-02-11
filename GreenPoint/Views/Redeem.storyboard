@@ -482,10 +482,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GS-ap-XLv">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="657.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qgj-Pm-IaR">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="657.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cf9-ou-6tY">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -702,10 +702,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQY-4T-VB9">
-                                                        <rect key="frame" x="0.0" y="525" width="414" height="131"/>
+                                                        <rect key="frame" x="0.0" y="525" width="414" height="132.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nSd-ZE-bKs">
-                                                                <rect key="frame" x="15" y="16" width="383" height="33"/>
+                                                                <rect key="frame" x="15" y="16" width="383" height="34.5"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment content="※">
                                                                         <attributes>
@@ -717,7 +717,7 @@
                                                                     <fragment content="按下下方「兌換」按鈕後即視為成功兌換商品。此動作無法更改或取消，亦無法退還點數。">
                                                                         <attributes>
                                                                             <color key="NSColor" systemColor="systemPinkColor"/>
-                                                                            <font key="NSFont" size="12" name=".PingFangTC-Regular"/>
+                                                                            <font key="NSFont" metaFont="cellTitle"/>
                                                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
                                                                         </attributes>
                                                                     </fragment>
@@ -725,7 +725,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ6-bI-Bpt">
-                                                                <rect key="frame" x="16" y="65" width="382" height="50"/>
+                                                                <rect key="frame" x="16" y="66.5" width="382" height="50"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="50" id="tIy-O4-59R"/>
                                                                 </constraints>
