@@ -21,5 +21,7 @@ class RedeemModalViewController: UIViewController {
     
     @IBAction func redeemPressed(_ sender: UIButton) {
 //        print("Redeem button was tapped.")
+        
+        performSegue(withIdentifier: "unwindToRedeem", sender: self)
     }
 }

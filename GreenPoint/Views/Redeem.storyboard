@@ -791,8 +791,12 @@
                             <constraint firstItem="smo-Di-bAd" firstAttribute="trailing" secondItem="6oP-FC-ttW" secondAttribute="trailing" constant="16" id="wrY-Hv-L9s"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Bby-uB-DU8" kind="unwind" identifier="unwindToRedeem" unwindAction="unwindToRedeemWithSegue:" id="hwb-TJ-7zt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkX-EU-7gf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Bby-uB-DU8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6282.608695652174" y="1114.9553571428571"/>
         </scene>

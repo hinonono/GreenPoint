@@ -19,6 +19,10 @@ class RedeemViewController: UIViewController {
         
         redeemCollectionView.backgroundColor = UIColor(named: "gary6")
     }
+    
+    @IBAction func unwindToRedeem(segue: UIStoryboardSegue) {
+        
+    }
 
 
 }
