@@ -793,6 +793,7 @@
                     </view>
                     <connections>
                         <segue destination="Bby-uB-DU8" kind="unwind" identifier="unwindToRedeem" unwindAction="unwindToRedeemWithSegue:" id="hwb-TJ-7zt"/>
+                        <segue destination="Bby-uB-DU8" kind="unwind" identifier="unwindToCoupon" unwindAction="unwindToCouponWithSegue:" id="Zqg-Ot-cSI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nkX-EU-7gf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

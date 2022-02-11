@@ -22,6 +22,21 @@ class RedeemModalViewController: UIViewController {
     @IBAction func redeemPressed(_ sender: UIButton) {
 //        print("Redeem button was tapped.")
         
-        performSegue(withIdentifier: "unwindToRedeem", sender: self)
+        //顯示alert
+        let alert = UIAlertController(title: "兌換成功", message: "已成功兌換商品", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "我的優惠券", style: .default) {_ in
+            self.performSegue(withIdentifier: "unwindToCoupon", sender: self)
+        }
+        
+        alert.addAction(okAction)
+        
+        let cancelAction = UIAlertAction(title: "確定", style: .cancel) {_ in
+            self.performSegue(withIdentifier: "unwindToRedeem", sender: self)
+        }
+        
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+        
     }
 }

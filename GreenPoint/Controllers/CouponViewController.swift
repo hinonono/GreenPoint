@@ -75,6 +75,10 @@ class CouponViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         self.navigationController?.navigationBar.tintColor = .black
     }
+    
+    @IBAction func unwindToCoupon(segue: UIStoryboardSegue) {
+        
+    }
 }
 
 extension CouponViewController: UITableViewDelegate, UITableViewDataSource {

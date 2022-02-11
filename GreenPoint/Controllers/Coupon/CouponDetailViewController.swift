@@ -33,5 +33,12 @@ class CouponDetailViewController: UIViewController {
     }
 
     @IBAction func copyButtonPressed(_ sender: Any) {
+        
+        //顯示alert
+        let alert = UIAlertController(title: "複製成功", message: "兌換序號已複製至剪貼簿", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "確定", style: .default, handler: nil)
+        
+        alert.addAction(okAction)
+        present(alert, animated: true, completion: nil)
     }
 }
