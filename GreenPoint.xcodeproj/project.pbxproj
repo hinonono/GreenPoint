@@ -48,6 +48,7 @@
 		26CA10BF27AA75CF00ECA491 /* CarrierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */; };
 		26CA10C127AA8D7F00ECA491 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10C027AA8D7F00ECA491 /* Post.swift */; };
 		26CA10C327AA8F2C00ECA491 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CA10C227AA8F2C00ECA491 /* PostView.swift */; };
+		26E5E85D27B64A94001B4E6B /* RedeemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5E85C27B64A94001B4E6B /* RedeemModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		26CA10BE27AA75CF00ECA491 /* CarrierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierViewController.swift; sourceTree = "<group>"; };
 		26CA10C027AA8D7F00ECA491 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		26CA10C227AA8F2C00ECA491 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		26E5E85C27B64A94001B4E6B /* RedeemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				260CE6F227B49F820078E064 /* RedeemDetailViewController.swift */,
+				26E5E85C27B64A94001B4E6B /* RedeemModalViewController.swift */,
 			);
 			path = Redeem;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				2696F71827AD6F5E009AAE20 /* NotificationTableDetailViewController.swift in Sources */,
 				269D849527B39C0000DA28B2 /* RedeemProduct.swift in Sources */,
 				268C3DE427B2C48B00EF748A /* CarrierTableViewCell.swift in Sources */,
+				26E5E85D27B64A94001B4E6B /* RedeemModalViewController.swift in Sources */,
 				261CC87427ACD69700B470FB /* Constants.swift in Sources */,
 				26BC743927B234AB007AD50D /* CustomUIView.swift in Sources */,
 				268C3DE127B2C46200EF748A /* Carriers.swift in Sources */,
