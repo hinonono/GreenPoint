@@ -68,6 +68,13 @@ class CouponViewController: UIViewController {
         
         couponTableView.reloadData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        self.navigationController?.navigationBar.tintColor = .black
+    }
 }
 
 extension CouponViewController: UITableViewDelegate, UITableViewDataSource {
