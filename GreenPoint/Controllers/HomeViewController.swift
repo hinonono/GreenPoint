@@ -12,7 +12,8 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var carousel: UIView!
     @IBOutlet weak var featuredCollectionView: UICollectionView!
-    
+    @IBOutlet weak var greenActionCollectionView: UICollectionView!
+    @IBOutlet weak var otherCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,10 @@ class HomeViewController: UIViewController {
         
         featuredCollectionView.delegate = self
         featuredCollectionView.dataSource = self
+        greenActionCollectionView.delegate = self
+        greenActionCollectionView.dataSource = self
+        otherCollectionView.delegate = self
+        otherCollectionView.dataSource = self
     }
     
     @IBAction func cellPressed(_ sender: UIButton) {
