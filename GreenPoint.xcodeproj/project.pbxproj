@@ -13,6 +13,7 @@
 		261CC87927ACE38900B470FB /* FeaturedListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87827ACE38900B470FB /* FeaturedListDetailViewController.swift */; };
 		261CC87B27ACFE6600B470FB /* BlackToTransparentGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87A27ACFE6600B470FB /* BlackToTransparentGradient.swift */; };
 		261CC87D27AD384C00B470FB /* FeaturedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261CC87C27AD384C00B470FB /* FeaturedTableViewCell.swift */; };
+		262982D627B768FE00DE541D /* KWStepper in Frameworks */ = {isa = PBXBuildFile; productRef = 262982D527B768FE00DE541D /* KWStepper */; };
 		264BDF6227ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6127ABB4C9008F8F88 /* FeaturedCollectionViewCell.swift */; };
 		264BDF6427ABCF55008F8F88 /* Featured.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264BDF6327ABCF55008F8F88 /* Featured.swift */; };
 		266011F427B68D4200F75232 /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266011F327B68D4200F75232 /* Coupon.swift */; };
@@ -111,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262982D627B768FE00DE541D /* KWStepper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +325,9 @@
 			dependencies = (
 			);
 			name = GreenPoint;
+			packageProductDependencies = (
+				262982D527B768FE00DE541D /* KWStepper */,
+			);
 			productName = GreenPoint;
 			productReference = 26CA109027AA678C00ECA491 /* GreenPoint.app */;
 			productType = "com.apple.product-type.application";
@@ -351,6 +356,9 @@
 				Base,
 			);
 			mainGroup = 26CA108727AA678C00ECA491;
+			packageReferences = (
+				262982D427B768FE00DE541D /* XCRemoteSwiftPackageReference "KWStepper" */,
+			);
 			productRefGroup = 26CA109127AA678C00ECA491 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -646,6 +654,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		262982D427B768FE00DE541D /* XCRemoteSwiftPackageReference "KWStepper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyleweiner/KWStepper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		262982D527B768FE00DE541D /* KWStepper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 262982D427B768FE00DE541D /* XCRemoteSwiftPackageReference "KWStepper" */;
+			productName = KWStepper;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		26CA109C27AA678C00ECA491 /* GreenPoint.xcdatamodeld */ = {
